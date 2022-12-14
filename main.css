@@ -40,8 +40,8 @@ body {
 .header__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 70%;
+
+  width: 80%;
 }
 
 .header__list {
@@ -60,9 +60,20 @@ body {
 .entry {
   text-decoration: none;
   color: #000;
+  border: 1px solid #1064e5;
+  padding: 0 26px;
+  border-radius: 25px;
 }
 
 .registration {
   text-decoration: none;
   color: #fff;
+  border: 1px solid #1064e5;
+  padding: 0 28px;
+  background-color: #1064e5;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.header__list + .header__list {
+  margin-left: 15px;
 }
