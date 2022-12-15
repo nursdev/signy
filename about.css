@@ -1,58 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: none;
-  border: 1px solid red;
+#blockMain{
+    min-width: 1000px;
+    min-height: 3512px;
+    width: 95%;
+    height: 100%;
+    background-color: beige;
+    padding-left: 50px;
 }
-
-.container {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 0 15px;
+.firstimg{
+    min-width:  731px;
+    min-height: 422px;
+    width:  731px;
+    height: 422px;
+    float: left;
+    margin-right: 30px;
 }
-
-.header {
-}
-
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.header__left {
-  width: 10%;
-  display: flex;
-  align-items: center;
-}
-.header__right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  flex-wrap: wrap;
-}
-
-.header__list {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  flex-wrap: wrap;
-}
-
-.header__list {
-  list-style-type: none;
-}
-
-.header__list + .header__list {
-  margin-left: 15px;
-}
-
-.header__action {
-  width: 40%;
-  display: flex;
-  justify-content: space-between;
+.mainNews{
+    font-size: 60px;
 }
