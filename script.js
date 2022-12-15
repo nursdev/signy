@@ -42,3 +42,19 @@ function nextSlide(dotnumber) {
     }
   }
 }
+
+function showVideo() {
+  console.log("hello world");
+  let video = document.getElementById("videoModal");
+  video.style.display = "block";
+  document.body.style.height = "100%";
+  document.body.style.overflow = "hidden";
+}
+
+function closeVideo() {
+  console.log("close video");
+  let videoModal = document.getElementById("videoModal");
+  videoModal.style.display = "none";
+  document.body.style.height = "100%";
+  document.body.style.overflow = "scroll";
+}
