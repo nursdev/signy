@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./contacts.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="container">
+              <div class="header__wrapper">
+                <div class="header__flex">
+                  <div class="header__logo">
+                    <img src="./images/logo.svg" alt="" />
+                    <span>Signy</span>
+                  </div>
+                  <ul class="header__list">
+                    <li class="header__list">0 800 750 643</li>
+                    <li class="header__list">О НАС</li>
+                    <li class="header__list">ТАРИФЫ</li>
+                    <li class="header__list">КОНТАКТЫ</li>
+      
+                    <li class="header__list">
+                      <a class="entry" href="">ВХОД</a>
+                    </li>
+                    <li class="header__list">
+                      <a class="registration" href="">РЕГИСТРАЦИЯ</a>
+                    </li>
+                    <li class="header__list">РУС</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="section1">
+            <a class="entry" href="./index.html">Signy</a>
+            <span>  / Контакты</span>
+          </div>
+
+        <div class="section2">
+            <h1>Наши контакты</h1>
+        </div>
+        <div id="map"></div>
+
+        <div class="section3">
+          <div class="for-text">
+            <p>Мы всегда рады ответить на ваши вопросы и развивать эффективное сотрудничество по всем вопросам, связанным с электронным документооборотом.</p>
+          </div>
+          <div class="for-information">
+            <div class="for-information-1">
+              <img src="./images/contacts/mobile.svg" alt="">
+              <span>0 800 750 643</span><b></b>
+            </div>
+              <span>+3 044 334 56 43</span><b></b> 
+              <span>+3 044 338 86 43</span>
+            <div class="for-information-2 for-information-1">
+                <img src="./images/contacts/letter.svg" alt="">
+                <span>infosmartsign@smarttender.biz</span>
+            </div>
+              <div class="for-information-3 for-information-1">
+                <img src="./images/contacts/location.svg" alt="">
+                <span>пр-т Бажана, 14 А Киев, 02072</span>
+              </div>
+          </div>
+        </div>
+        <div class="section4">
+          <h1>...или напишите нам:</h1>
+        </div>
+        <div class="section5">
+          <p>Имя*:</p>
+        </div>
+        <div class="section6">
+          <input class="form1" type="text" placeholder="Иван">
+        </div>
+        <div class="section7">
+          <p>Электронная почта*:</p>
+        </div>
+        <div class="section8 section6">
+          <input class="form1" type="text"placeholder="ivan@mail.com">
+        </div>
+        <div class="section9">
+          <p>Телефон*:</p>
+        </div>
+        <div class="section10 section6">
+          <input class="form1" type="text" placeholder="+38 000 000 00 00" >
+        </div>
+        <div class="section11">
+          <p>Сообщение:</p>
+        </div>
+        <div class="section12 section6">
+            <input class="form1" type="text" placeholder="введите тут" >
+        </div>
+    </div>
+    <h1>Location</h1>
+    
+    <script>
+      function initMap(){
+         var uluru = {lat: 43.2077462, lng: 76.6668635};
+         var map = new google.maps.Map(document.getElementById('map'),{
+          zoom: 5,
+          center: uluru
+         });
+         var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+         });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2sctvftS32FZhmOtxuSi282a7mHipuk&callback=initMap">
+    </script>
+</body>
+</html>
