@@ -6,30 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main</title>
     <link rel="stylesheet" href="./main.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="header__left">
-            <img src="./images/logo.svg" alt="" />
-            <span>Signy</span>
-          </div>
-          <div class="header__right">
-            <ul class="header__list">
-              <li class="header__item">0 800 750 643</li>
-              <li class="header__item">ПРО НАС</li>
-              <li class="header__item">ЦЕНЫ</li>
-              <li class="header__item">КОНТАКТЫ</li>
-            </ul>
-            <div class="header__action">
-              <a href="#">ВХОД</a>
-              <a href="#">РЕГИСТРАЦИЯ</a>
-              <a href="#">РУС</a>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div href="#" class="header__logo">
+              <a href="">
+                <img src="./images/logo.svg" alt="" />
+              </a>
+
+              <h2>Signy</h2>
             </div>
+
+            <div onclick="showMenu()" class="header__burger">
+              <img id="menuBtn" src="./images/menu.svg" alt="" />
+            </div>
+
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__link">0 800 750 643</li>
+                <li class="header__link">ПРО НАС</li>
+                <li class="header__link">ЦЕНЫ</li>
+                <li class="header__link">КОНТАКТЫ</li>
+                <li class="header__link">
+                  <a href="" class="entry">ВХОД</a>
+                </li>
+                <li class="header__link">
+                  <a href="" class="registration">РЕГИСТРАЦИЯ</a>
+                </li>
+                <li class="header__link">РУС</li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
   </body>
 </html>
