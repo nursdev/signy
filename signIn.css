@@ -9,6 +9,8 @@
   }
 body {
     font-family: "IBM Plex Sans", sans-serif;
+    /* background-color: #20a8d8; */
+    background-color: #e4e5e6;
 }
 /* HEADER */
 .container {
@@ -16,6 +18,7 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     position: relative;
+    background-color: #fff;
 }
 .header-burger {
     display: none;
@@ -24,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 5px;
     width: 100%;
 }
 .header-menu {
@@ -64,4 +67,68 @@ body {
 #menuBtn {
     width: 24px;
     height: 24px;
+}
+
+/* SECTIONS */
+.section1{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* width: 100%; */
+    /* display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative; */
+}
+.container1{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.div1{
+    padding: 20px 30px 100px 30px;
+    margin-top: 1%;
+    max-width: 31%;
+    background-color: #ffffff;
+}
+.for-password-sign{
+    margin-top: 5%;
+}
+.for-password-sign1{
+    background-color: #20a8d8;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    margin-bottom: 5%;
+}
+.for-a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.div2{
+    margin-top: 1%;
+    padding: 0px 90px 0px 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: #20a8d8;
+}
+.div2-2{
+    margin-top: 15%;
+    color: #fff;
+}
+.for-registr-h{
+    text-align: center;
+    margin-bottom: 1%;
+}
+.for-registr-p{
+    margin-left: 10px;
+    margin-bottom: 10%;
+}
+.sign2{
+    margin-left: 18%;
+    width: 60%;
+    background-color: #1985AC;
 }
