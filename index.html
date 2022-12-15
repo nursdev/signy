@@ -43,24 +43,77 @@
           </div>
           <div class="header__content">
             <div class="header__left">
-              <h1>
+              <h1 id="header__left__title">
                 Цифровой документооборот <br />
                 в три этапа:
-              </h1>
-              <h2>Быстрая регистрация</h2>
-              <p>
+              </h1">
+              <h2 id="header__left__subtitle">Быстрая регистрация</h2>
+              <p id="header__left__p">
                 Мы создали, возможно, самую простую регистрацию. Регистрируйся,
                 получай полный доступ к сервису и 1000 подписей документов в
                 подарок!
               </p>
               <a href="">ПОПРОБОВАТЬ БЕСПЛАТНО</a>
+              <div class="slider-dots">
+                <img
+                  class="dot1 active-dot"
+                  src="./images/circle-solid.svg"
+                  alt=""
+                  onclick="nextSlide(this)"
+                />
+                <img
+                  class="dot2"
+                  onclick="nextSlide(this)"
+                  src="./images/circle-dot-solid.svg"
+                  alt=""
+                />
+                <img
+                  class="dot3"
+                  onclick="nextSlide(this)"
+                  src="./images/circle-dot-solid.svg"
+                  alt=""
+                />
+              </div>
             </div>
             <div class="header__right">
-              <img src="./images/main/hero-slide-figure.png" alt="" />
+              <img id="header__right__img" src="./images/main/hero-slide-figure.png" alt="" />
             </div>
           </div>
         </div>
       </header>
     </div>
+    <section class="security">
+      <div class="container">
+        <ul class="security__list">
+          <li class="security__item">
+            <img src="./images/main/items/item1.svg" alt="">
+            <div class="security__item__text">
+              <h3>Моментально</h3>
+              <span>Никаких задержек.</span>
+              <br>
+              <span>1 секунд на подписание.</span>
+            </div>
+          </li>
+          <li class="security__item">
+            <img src="./images/main/items/item2.svg" alt="">
+            <div class="security__item__text">
+              <h3>Моментально</h3>
+              <span>Никаких задержек.</span>
+              <br>
+              <span>1 секунд на подписание.</span>
+            </div>
+          </li>
+          <li class="security__item">
+            <img src="./images/main/items/item3.svg" alt="">
+            <div class="security__item__text">
+              <h3>Моментально</h3>
+              <span>Никаких задержек.</span>
+              <br>
+              <span>1 секунд на подписание.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
