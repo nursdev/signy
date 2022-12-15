@@ -289,3 +289,60 @@ body {
   font-weight: 500;
   margin-bottom: 15px;
 }
+
+/* TARIF */
+
+.tarif .container > h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tarif__wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: stretch; */
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: stretch;
+}
+
+.tarif__card {
+  background-color: #deeefc;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 200px;
+  min-height: 280px;
+  position: relative;
+}
+
+.tarif__card h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.tarif__card p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tarif__card span {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.tarif__regis {
+  background-color: #1064e5;
+  border-radius: 24px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 3%;
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+  /* height: 100%; */
+}
