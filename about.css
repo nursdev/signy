@@ -1,0 +1,19 @@
+#blockMain{
+    min-width: 1000px;
+    min-height: 3512px;
+    width: 95%;
+    height: 100%;
+    background-color: beige;
+    padding-left: 50px;
+}
+.firstimg{
+    min-width:  731px;
+    min-height: 422px;
+    width:  731px;
+    height: 422px;
+    float: left;
+    margin-right: 30px;
+}
+.mainNews{
+    font-size: 60px;
+}

@@ -4,22 +4,37 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
   border: none;
   /* border: 1px solid red; */
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5b7a7c611e6a19c81bf899dfadc921c8e970a4fc
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 .container {
+<<<<<<< HEAD
   max-width: 80%;
   margin: 0 auto;
   padding: 0 10px;
   position: relative;
 }
+=======
+  padding: 0 15px;
+  max-width: 88%;
+  margin: 0 auto;
+}
+/* HEADER */
+
+>>>>>>> 5b7a7c611e6a19c81bf899dfadc921c8e970a4fc
 .header {
   background: linear-gradient(
     293.97deg,
     #ffffff -9.96%,
+<<<<<<< HEAD
     rgba(222, 238, 252, 1) 111.88%
   );
 }
@@ -28,18 +43,34 @@ body {
 }
 
 .header__body {
+=======
+    rgba(222, 238, 252) 111.88%
+  );
+}
+
+.header__flex {
+  padding-top: 15px;
+>>>>>>> 5b7a7c611e6a19c81bf899dfadc921c8e970a4fc
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+<<<<<<< HEAD
 }
 .header__menu {
   width: 70%;
   transition: 0.4, ease;
 }
+=======
+  font-weight: 500;
+}
+
+>>>>>>> 5b7a7c611e6a19c81bf899dfadc921c8e970a4fc
 .header__list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
   align-items: center;
   max-width: 100%;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
@@ -73,10 +104,31 @@ body {
   background-color: transparent;
   border: 1px solid #1064e5;
   border-radius: 20px;
+=======
+  width: 70%;
+}
+
+.header__list {
+  font-size: 14px;
+  line-height: 2.5;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 8%;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 150%;
+}
+
+.entry {
+>>>>>>> 5b7a7c611e6a19c81bf899dfadc921c8e970a4fc
   text-decoration: none;
   color: #000;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1180px) {
   .header__body {
     display: block;
@@ -97,4 +149,9 @@ body {
     top: 0;
     margin-top: 5px;
   }
+=======
+.registration {
+  text-decoration: none;
+  color: #fff;
+>>>>>>> 5b7a7c611e6a19c81bf899dfadc921c8e970a4fc
 }
