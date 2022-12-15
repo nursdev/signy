@@ -82,62 +82,88 @@ body {
 .section3{
   max-width: 100%;
   padding: 1% 6.9%;
+  display: flex;
+  /* justify-content: start; */
+  justify-content: space-between;
+}
+#map {
+  width: 50%;
+  height: 235px;
+}
+.total-div{
+  max-width: 40%;
 }
 .for-text{
-  max-width: 31%;
+  max-width: 95%;
+  font-size: 18px;
 }
 .for-information{
-  padding: 0.5% 0 0 0%;
   display: flex;
   flex-direction: column;
-  max-width: 19.5%;
+  max-width: 52%;
 }
 .for-information-1{
-  line-height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 2% 0;
+  text-decoration: none !important;
+    /* line-height: 100%; */
+  /* align-items: center; */
+}
+.icon_mobile{
+  padding-top: 3%;
+  margin-right: 7%;
+}
+.li_contact{
+  margin-top: 6%;
+}
+.icon_letter{
+  padding-top: 1%;
+  margin-right: 7%;
+}
+.a-for_email{
+  text-decoration: none;
+  color: inherit;
+}
+.icon_location{
+  margin-right: 7%;
 }
 /* CENTRE WEBSITE */
 .section4{
   max-width: 100%;
   padding: 0.5% 6.9%;
+  margin-bottom: 0.5%;
 }
-.section5{
-  max-width: 19.5%;
-  padding: 0.2% 8.2%;
-}
-.section6{
+#form-contacts{
   padding: 0 6.9%;
 }
-/* for form  */
-input {
-  display:block;
-  width:22%;
-  margin: 0.5% 0;
-  padding: 0.8%;
+.label1 + input{
+  margin-top: 0.5%;
 }
-.form1{
+input, textarea{
+  width: 22%;
   border-radius: 25px;
-  border: 0.5px solid #000;
-  /* transition: .3s border-color; */
-}
-.form1:hover{
-  border: 1px solid green;
-}
-.section7{
-  max-width: 26%;
-  padding: 0.2% 8.2%;
-}
-.section9{
-  max-width: 22%;
-  padding: 0.2% 8.2%;
-}
-.section11{
-  max-width: 22%;
-  padding: 0.2% 8.2%;
+  display: block;
+  font-size: 14px;
+  padding: 15px 20px;
+  font-family: inherit;
+  border: 1px solid #000;
+  margin-bottom: 1%;
 }
 
-#map {
-  height: 400px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
+input:hover{
+  border: 1px solid green;
+}
+textarea{
+  border-radius: 8px;
+  font-family: inherit !important;
+  resize: none;
+}
+.for-submit{
+  color: white;
+  background-color: #1064E5;
+  width: 13%;
+  font-size: 16px;
 }
