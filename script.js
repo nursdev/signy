@@ -57,4 +57,48 @@ function closeVideo() {
   videoModal.style.display = "none";
   document.body.style.height = "100%";
   document.body.style.overflow = "scroll";
+<<<<<<< HEAD
 }
+=======
+}
+
+function showAnswer(id) {
+  let attId = id.getAttribute("id");
+  let addClass = id.classList.contains("activeqi");
+  if (addClass) {
+    id.classList.remove("activeqi");
+    let obj = document.querySelector("#" + attId + " p");
+    obj.style.display = "none";
+  } else {
+    if (attId == "qi1") {
+      let obj = document.querySelector("#qi1 p");
+      obj.style.display = "block";
+      id.classList.add("activeqi");
+    } else if (attId == "qi2") {
+      let obj = document.querySelector("#qi2 p");
+      obj.style.display = "block";
+      id.classList.add("activeqi");
+    } else if (attId == "qi3") {
+      let obj = document.querySelector("#qi3 p");
+      obj.style.display = "block";
+      id.classList.add("activeqi");
+    } else if (attId == "qi4") {
+      let obj = document.querySelector("#qi4 p");
+      obj.style.display = "block";
+      id.classList.add("activeqi");
+    } else if (attId == "qi5") {
+      let obj = document.querySelector("#qi5 p");
+      obj.style.display = "block";
+      id.classList.add("activeqi");
+    } else if (attId == "qi6") {
+      let obj = document.querySelector("#qi6 p");
+      obj.style.display = "block";
+      id.classList.add("activeqi");
+    } else if (attId == "qi7") {
+      let obj = document.querySelector("#qi7 p");
+      obj.style.display = "block";
+      id.classList.add("activeqi");
+    }
+  }
+}
+>>>>>>> df8f11e02c8cea35709015f4eb5c50d27382df4a
