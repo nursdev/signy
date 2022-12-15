@@ -6,6 +6,7 @@
   padding: 0;
   border: none;
   /* border: 1px solid red; */
+  transition: width 1s ease 0s;
 }
 body {
   font-family: "IBM Plex Sans", sans-serif;
@@ -34,6 +35,7 @@ body {
   align-items: center;
   padding-top: 15px;
   width: 100%;
+  margin-bottom: 40px;
 }
 .header__menu {
   width: 70%;
@@ -86,14 +88,17 @@ body {
   height: 92vh;
   margin-top: 50px;
   max-width: 100%;
-  flex-wrap: wrap;
+  position: relative;
+  /* flex-wrap: wrap; */
 }
 
 .header__left {
   max-width: 50%;
+  position: relative;
 }
 .header__right {
   max-width: 100%;
+  position: relative;
 }
 .header__right img {
   max-width: 100%;
@@ -142,8 +147,233 @@ body {
 
   border-radius: 24px;
 }
+.dot {
+  width: 12px;
+  height: 12px;
+}
+.slider-dots {
+  position: absolute;
+  bottom: -50%;
+  left: 88%;
+  cursor: pointer;
+}
+.slider-dots img {
+  margin-left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
 @media (max-width: 768px) {
   .header__content {
-    display: block;
+    position: relative;
+    margin-top: -150px;
+    z-index: 1;
   }
+  .header__left {
+    /* max-width: 100%; */
+  }
+  .header__right img {
+    position: absolute;
+    z-index: -1;
+    /* overflow: hidden; */
+  }
+}
+
+/* SECURITY */
+.security {
+  margin-top: 50px;
+}
+.security__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.security__item {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+  align-items: stretch;
+}
+
+/* PRODUCT */
+
+.product {
+  margin-top: 50px;
+  background-color: #d8f1f0;
+}
+
+.product__top {
+  padding-top: 50px;
+}
+
+.product__top {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+.product__top__left {
+  max-width: 45%;
+}
+.product__top__left h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.product__top__item {
+  list-style: inside;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product__top__left a {
+  padding: 10px 30px;
+  border: 1px solid #1064e5;
+  background-color: transparent;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+.product__top__right {
+  max-width: 45%;
+}
+.product__top__right img {
+  width: 100%;
+}
+.product__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  column-gap: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.product__bottom__right {
+  max-width: 45%;
+}
+
+.product__bottom__left {
+  max-width: 45%;
+}
+.product__bottom__left img {
+  width: 100%;
+}
+
+.product__bottom__list {
+  list-style: inside;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.product__bottom__right a {
+  padding: 10px 15px;
+  border: 1px solid #1064e5;
+  border-radius: 24px;
+  text-decoration: none;
+  background-color: #1064e5;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product__bottom__right h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* TARIF */
+
+.tarif .container > h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tarif__wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: stretch; */
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: stretch;
+}
+
+.tarif__card {
+  background-color: #deeefc;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 200px;
+  min-height: 280px;
+  position: relative;
+}
+
+.tarif__card h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.tarif__card p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tarif__card span {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.tarif__regis {
+  background-color: #1064e5;
+  border-radius: 24px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 3%;
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+  /* height: 100%; */
+}
+
+/* DOCUMENT */
+
+.document {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+  margin-top: 80px;
+  background-color: #d8f1f0;
+}
+
+.document p {
+  max-width: 30%;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.document h2 {
+  font-weight: 500;
+  font-size: 330%;
+  margin-top: 20px;
+}
+
+.document h3 {
+  font-weight: 500;
+  font-size: 40px;
 }

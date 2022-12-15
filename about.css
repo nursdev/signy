@@ -1,10 +1,12 @@
 #blockMain{
-    min-width: 1000px;
-    min-height: 3512px;
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+    padding: 20px;
+}
+#first{
     width: 95%;
     height: 100%;
-    background-color: beige;
-    padding-left: 50px;
 }
 .firstimg{
     min-width:  731px;
@@ -13,7 +15,32 @@
     height: 422px;
     float: left;
     margin-right: 30px;
+    clear: right;
 }
 .mainNews{
     font-size: 60px;
+    
+}
+.subGroup{
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+}
+.group1{
+    width: 1232px;
+    height: 546px;
+}
+.imgOfG{
+    width: 100%;
+    height: 30%;
+}
+#second{
+    clear: both;
+}
+.textOfNews{
+    display: block;
+    width: 80%;
+}
+.group{
+    width: 80%;
 }
