@@ -132,3 +132,29 @@ body {
     width: 60%;
     background-color: #1985AC;
 }
+/* FOOTER */
+.footer1{
+    width: 100%;
+    height: 4%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0; left: 0;
+}
+.footer-wrapper{
+    display: flex;
+}
+.footer-body2{
+    display: flex;
+}
+.nav-footer{
+    display: flex;
+    justify-content: end;
+}
+.ul-nav-footer{
+    display: flex;
+    list-style-type: none;
+}
+.li-nav-footer{
+    display: flex;
+}
+
