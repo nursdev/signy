@@ -134,27 +134,16 @@ body {
 }
 /* FOOTER */
 .footer1{
-    width: 100%;
-    height: 4%;
+    padding: 0px 10px;
     background-color: #fff;
-    position: absolute;
-    bottom: 0; left: 0;
+    border: 1px solid #f0f3f5;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 .footer-wrapper{
     display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
 }
-.footer-body2{
-    display: flex;
-}
-.nav-footer{
-    display: flex;
-    justify-content: end;
-}
-.ul-nav-footer{
-    display: flex;
-    list-style-type: none;
-}
-.li-nav-footer{
-    display: flex;
-}
-
