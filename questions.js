@@ -1,12 +1,4 @@
-let answers = document.querySelectorAll(".accordion");
-answers.forEach((event) => {
-  event.addEventListener("click", () => {
-    if (event.classList.contains("active")) {
-      event.classList.remove("active");
-    } else {
-      event.classList.add("active");
-    }
-  });
+var btn = document.getElementsByClassName("main-q");
+btn.addEventListener("click", function() {
+  this.classList.add("active");
 });
-
-
