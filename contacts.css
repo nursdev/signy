@@ -201,3 +201,24 @@ textarea{
   width: 13%;
   font-size: 16px;
 }
+
+/* FOOTER */
+.footer{
+  background-color: #061224;
+}
+.first_ul-footer {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #fff;
+  list-style: none;
+}
+
+.second_ul-footer-row {
+  list-style: none;
+}
+
+.second_li-footer-row {
+  margin-bottom: 20px;
+}
