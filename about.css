@@ -1,5 +1,5 @@
 #blockMain{
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin-left: 100px;
     padding: 20px;
@@ -9,13 +9,12 @@
     height: 100%;
 }
 .firstimg{
-    min-width:  731px;
-    min-height: 422px;
-    width:  731px;
-    height: 422px;
+    
+    width:  50%;
+    
     float: left;
     margin-right: 30px;
-    clear: right;
+    
 }
 .mainNews{
     font-size: 60px;
@@ -34,7 +33,7 @@
     width: 100%;
     height: 30%;
 }
-#second{
+#secondone{
     clear: both;
 }
 .textOfNews{
@@ -44,3 +43,137 @@
 .group{
     width: 80%;
 }
+
+.tableD{
+    width: 85%;
+display: table;
+}
+.rowD{
+    width: 100%;
+display: table-row;
+}
+.cellD{
+    display: table-cell;
+    width: 25%;
+}
+.imgD{
+    width: 89%;
+    
+	
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+.imgD:hover {
+    cursor: zoom-in;
+    border: 0;
+    -moz-box-shadow:2px 2px 7px 2px rgba(130,130,130,1),-1px -1px 7px 2px rgba(130,130,130,1);
+   -webkit-box-shadow: 2px 2px 7px 2px rgba(130,130,130,.7),-1px -1px 7px 2px rgba(130,130,130,1);
+   box-shadow: 2px 2px 7px 2px rgba(130,130,130,.7),-2px -2px 7px 2px rgba(130,130,130,1);
+}
+
+
+#nav-bar{
+    clear: both;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+#secondtwo{
+    display: none;
+}
+#secondthree{
+    display: none;
+}
+
+@media (max-width: 600px)  {
+    body{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .firstimg{
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+    }
+    #blockMain{
+        width: 100%;
+        height: 100%;
+        margin:0%;
+        padding: 20px;
+    }
+
+    
+    #first{
+        width: 95%;
+        height: 100%;
+    }
+    
+    .mainNews{
+        font-size: 122%;
+        
+    }
+    
+    .imgOfG{
+        width: 100%;
+        height: 30%;
+    }
+    #secondone{
+        clear: both;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .textOfNews{
+        display: block;
+        width: 80%;
+    }
+    .group{
+        width: 80%;
+    }
+    
+    .tableD{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .rowD{
+        width: 100%;
+    display: none;
+    }
+    .cellD{
+        display: table-cell;
+        width: 100%;
+    }
+    .imgD{
+        width: 89%;
+        
+        
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .imgD:hover {
+        cursor: zoom-in;
+        border: 0;
+        -moz-box-shadow:2px 2px 7px 2px rgba(130,130,130,1),-1px -1px 7px 2px rgba(130,130,130,1);
+       -webkit-box-shadow: 2px 2px 7px 2px rgba(130,130,130,.7),-1px -1px 7px 2px rgba(130,130,130,1);
+       box-shadow: 2px 2px 7px 2px rgba(130,130,130,.7),-2px -2px 7px 2px rgba(130,130,130,1);
+    }
+    
+    
+    #nav-bar{
+        clear: both;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    #secondtwo{
+        display: none;
+    }
+    #secondthree{
+        display: none;
+    }
+    .datetime{
+        font-size: 80%;
+    }
+}
+

@@ -98,6 +98,7 @@ color: rgba(6, 18, 36, 0.9);
   content: "+";
   margin-right: .3em;
   color: #1064E5;
+  
 }
 details[open] > .answer:before {
   content: "−";
@@ -127,6 +128,3 @@ color: rgba(6, 18, 36, 0.9);
     width: 50%;
 }
 
-@media (min-width: 1024px), (max-width: 640px) {
-    
-}
