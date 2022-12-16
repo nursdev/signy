@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.2.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+<link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='all' />
+</head>
+<body>
+    <h6>Signy.online / Видеоинструкции</h6>
+
+    <div id="videoPage">
+        <h1>Видеоинструкции</h1>
+        <h2>Создание документов в Signy</h2>
+        <h5>05.11.20</h5>
+
+        <a href="http://www.youtube.com/watch?v=fcoNym1Q1Ds" rel="prettyPhoto" title="Заголовок">
+            <img src="https://i.ytimg.com/vi/fcoNym1Q1Ds/hqdefault.jpg" alt="YouTube" width="60" />
+            </a>
+            <script type="text/javascript" charset="utf-8">
+                $(document).ready(function(){
+                  $("a[rel^='prettyPhoto']").prettyPhoto();
+                });
+                </script>
+
+
+
+<!-- ссылка на видео -->
+<a title="Pug Life - Simon's Cat" rel="prettyPhoto" href="https://www.youtube.com/watch?v=fcoNym1Q1Ds&rel=0">
+	<img class="scale-with-grid" src="https://i.ytimg.com/vi/fcoNym1Q1Ds/hqdefault.jpg" width="626" height="352" alt="Simon's Cat Pug Life" />
+</a>
+
+<!-- указываем настройки YouTube в iframe -->
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+        iframe_markup: '<iframe src ="{path}&autohide=1&iv_load_policy=3&iv_load_policy=3&showinfo=0" width="{width}" height="{height}" frameborder="no"></iframe>'
+    });
+});
+</script>
+    </div>
+
+</body>
+</html>
