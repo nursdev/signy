@@ -212,6 +212,48 @@ body {
   font-weight: 700;
 }
 
+/* INTEGRATION */
+.integration {
+  margin: 80px 0;
+}
+.integration__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.integration__wrapper div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+
+  border-radius: 64px;
+}
+#one {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 30px 15px;
+  /* border: 1px solid red; */
+  border-radius: 40px;
+  color: #fff;
+}
+.active-btn {
+  background-color: #3064dc;
+}
+#two {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 30px 15px;
+  /* border: 1px solid red; */
+  border-radius: 40px;
+}
+
 /* FOOTER */
 .footer {
   display: none;
