@@ -102,7 +102,7 @@ body {
 /* CARD */
 
 .card {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .card__wrapper {
@@ -189,9 +189,32 @@ body {
   /* align-items: center; */
   text-decoration: none;
 }
+.another {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+/* LAW */
+.law {
+  margin-top: 20px;
+  padding-top: 40px;
+}
+.law__card {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.law__card span {
+  color: #3a6ddf;
+  font-weight: 700;
+}
 
 /* FOOTER */
 .footer {
+  display: none;
   padding: 0px 10px;
   background-color: #fff;
   border: 1px solid #f0f3f5;
