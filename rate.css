@@ -192,6 +192,7 @@ body {
 .another {
   background-color: #fff;
   margin-top: 20px;
+  padding-bottom: 25px;
 }
 
 /* LAW */
@@ -254,10 +255,68 @@ body {
   border-radius: 40px;
 }
 
+.integration__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.integration__content__card h3 {
+  padding-bottom: 20px;
+}
+
+.integration__content__card__left h3 {
+  margin: 20px 0;
+}
+#integ__flag {
+  margin-bottom: 60px;
+}
+#if1::before {
+  display: inline-block;
+  content: " ";
+  background-image: url("./images/rate/ptichka.svg");
+  background-size: 15px 15px;
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+}
+#integ__flag2 {
+  margin-bottom: 60px;
+}
+#if1::before {
+  display: inline-block;
+  content: " ";
+  background-image: url("./images/rate/checkWhite.svg");
+  background-size: 15px 15px;
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+}
+
+#buy {
+  background-color: #1064e5;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 30%;
+  border-radius: 5px;
+}
+
+.integration__card__wrapper {
+  display: flex;
+  margin-top: 20px;
+  column-gap: 20px;
+}
+
+.integration__content__card {
+  background-color: #f5f5f5;
+
+  padding: 20px;
+  border-radius: 15px;
+}
+
 /* FOOTER */
 .footer {
-  display: none;
-  padding: 0px 10px;
   background-color: #fff;
   border: 1px solid #f0f3f5;
   position: fixed;

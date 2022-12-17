@@ -57,9 +57,6 @@ function closeVideo() {
   videoModal.style.display = "none";
   document.body.style.height = "100%";
   document.body.style.overflow = "scroll";
-<<<<<<< HEAD
-}
-=======
 }
 
 function showAnswer(id) {
@@ -101,4 +98,53 @@ function showAnswer(id) {
     }
   }
 }
->>>>>>> df8f11e02c8cea35709015f4eb5c50d27382df4a
+
+function changeInt(el) {
+  let active = el.classList.contains("active-btn");
+  if (!active) {
+    let id = el.id;
+    let one = document.getElementById("one");
+    let two = document.getElementById("two");
+
+    let title = document.getElementById("title");
+    let price = document.getElementById("price");
+    let buy = document.getElementById("buy");
+    let img = document.getElementById("img");
+    let year = document.getElementById("year");
+    let flag = document.getElementById("integ__flag");
+    let bcgc = document.getElementsByClassName("integration__content__card")[0];
+    if (id == "two") {
+      one.classList.remove("active-btn");
+      two.classList.add("active-btn");
+      flag.style.color = "#fff";
+      buy.style.backgroundColor = "#fff";
+      title.innerHTML = "Интеграция со всеми системами ЕДО**";
+      title.style.color = "#fff";
+      title.style.borderBottom = "1px solid #fff";
+      price.innerHTML = "4000 ₴";
+      bcgc.style.backgroundColor = "#3064dc";
+      img.src = "./images/rate/integ2.png";
+      year.style.color = "#fff";
+      price.style.color = "#fff";
+      buy.style.color = "#1064e5";
+
+      preudoBefore.backgroundImage = 'url("./images/rate/checkWhite.svg")';
+    } else {
+      two.classList.remove("active-btn");
+      one.classList.add("active-btn");
+      flag.style.color = "#000";
+      year.style.color = "#000";
+      title.style.color = "#000";
+
+      preudoBefore.backgroundImage = 'url("./images/rate/ptichka.svg")';
+
+      title.style.borderBottom = "1px solid #000";
+      price.style.color = "#000";
+      bcgc.style.backgroundColor = "#f5f5f5";
+      img.src = "./images/rate/integ1.png";
+      buy.style.backgroundColor = "#1064e5";
+      buy.style.color = "#fff";
+    }
+  }
+  //dotnumber.classList.contains("active-dot")
+}
