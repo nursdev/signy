@@ -44,11 +44,16 @@ function nextSlide(dotnumber) {
 }
 
 function showVideo() {
-  console.log("hello world");
   let video = document.getElementById("videoModal");
   video.style.display = "block";
   document.body.style.height = "100%";
   document.body.style.overflow = "hidden";
+  var blockMovie = anime({
+    targets: "#videoModal",
+    easing: "linear",
+    duration: 3000,
+    direction: "alternate",
+  });
 }
 
 function closeVideo() {
@@ -179,4 +184,31 @@ function showSlides(n) {
 
   dots[slideIndex - 1].className += " active";
   slides[slideIndex - 1].style.display = "flex";
+  if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-18%";
+
+  // var cssSelector = anime({
+  //   targets: ".mySlideShow" + slideIndex,
+  //   translateX: "10%",
+  // });
 }
+
+function showPhone() {
+  let phones = document.getElementsByClassName("phone");
+  for (let i = 0; i < phones.length; i++) {
+    phones[i].style.display = "block";
+  }
+}
+
+function hidePhone() {
+  let phones = document.getElementsByClassName("phone");
+  for (let i = 0; i < phones.length; i++) {
+    phones[i].style.display = "none";
+  }
+}
+
+function showList() {
+  let lists = document.getElementsByClassName("lists");
+  lists[0].style.display = "block";
+}
+
+function hideList() {}

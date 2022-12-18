@@ -26,23 +26,56 @@
 
             <nav class="header__menu">
               <ul class="header__list">
-                <li class="header__link">0 800 750 643</li>
-                <li class="header__link">ПРО НАС</li>
+                <li
+                  class="header__link"
+                  onmouseover="showPhone()"
+                  onmouseout="hidePhone()"
+                >
+                  <a href="tel:0 800 750 643">0 800 750 643</a>
+                  <a class="phone" href="tel:044 334 56 43">044 334 56 43</a>
+                </li>
+                <li
+                  class="header__link"
+                  onmouseover="showList()"
+                  onmouseout="hideList()"
+                >
+                  <a href="">О НАС</a>
+                  <div class="lists">
+                    <a href="./blog.html">БЛОГ</a>
+                    <br />
+                    <a href="./video.html">ВИДЕО</a>
+                    <br />
+                    <a href="./questions.html">ВОПРОСЫ</a>
+                  </div>
+                </li>
                 <li class="header__link">ЦЕНЫ</li>
                 <li class="header__link">КОНТАКТЫ</li>
                 <li class="header__link">
-                  <a href="" class="entry">ВХОД</a>
+                  <a href="./signIn.html" class="entry">ВХОД</a>
                 </li>
                 <li class="header__link">
-                  <a href="" class="registration">РЕГИСТРАЦИЯ</a>
+                  <a href="./registration.html" class="registration"
+                    >РЕГИСТРАЦИЯ</a
+                  >
                 </li>
-                <li class="header__link">РУС</li>
+                <!-- <li
+                  class="header__link"
+                  onmouseover="showLang()"
+                  onmouseout="hideLang()"
+                >
+                  <a onclick="setLang(this)" class="language ru one" href="#"
+                    >РУС</a
+                  >
+                  <a onclick="setLang(this)" class="language ukr two" href="#"
+                    >УКР</a
+                  >
+                </li> -->
               </ul>
             </nav>
           </div>
           <div class="header__content">
             <div class="slideContainer">
-              <div class="mySlideShow fade">
+              <div class="mySlideShow mySlideShow1 fade">
                 <div class="mySlideShow__left">
                   <h1 class="slideTitle">
                     Цифровой документооборот в три этапа:
@@ -70,7 +103,7 @@
                   />
                 </div>
               </div>
-              <div class="mySlideShow fade">
+              <div class="mySlideShow mySlideShow2 fade">
                 <div class="mySlideShow__left">
                   <h1 class="slideTitle">
                     Цифровой документооборот в три этапа:
@@ -96,7 +129,7 @@
                   />
                 </div>
               </div>
-              <div class="mySlideShow fade">
+              <div class="mySlideShow mySlideShow3 fade">
                 <div class="mySlideShow__left">
                   <h1 class="slideTitle">
                     Цифровой документооборот в три этапа:
@@ -270,7 +303,7 @@
     </section>
 
     <section class="document">
-      <h2>5 820 125 114</h2>
+      <h2 class="number">5 820 125 114</h2>
       <h3>подписано документов</h3>
       <p>
         Наша компания уже более 30 лет создает удобные решения для бизнеса
@@ -454,5 +487,15 @@
       </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="./anime.js"></script>
+    <script>
+      setTimeout(animation, 100);
+      function animation() {
+        var cssSelector = anime({
+          targets: ".header__content",
+          translateX: 150,
+        });
+      }
+    </script>
   </body>
 </html>
