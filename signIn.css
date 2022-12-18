@@ -88,9 +88,9 @@ body {
     justify-content: center;
 }
 .div1{
-    padding: 20px 30px 100px 30px;
+    padding: 3% 3% 5% 7%;
     margin-top: 1%;
-    max-width: 31%;
+    width: 33%;
     background-color: #ffffff;
 }
 .for-h1{
@@ -106,12 +106,12 @@ body {
 }
 .for-password-sign1{
     background-color: #20a8d8;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     line-height: 2;
     margin-bottom: 5%;
-    width: 50%;
+    /* max-width: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,29 +124,35 @@ body {
     color: #ffffff;
 }
 .div2{
+    width: 33%;
     margin-top: 1%;
-    padding: 0px 90px 0px 90px;
+    padding: 0px 30px 0px 30px;
     display: flex;
     flex-direction: column;
     background-color: #20a8d8;
 }
 .div2-2{
-    margin-top: 10%;
+    margin-top: 10%;    
     color: #fff;
-}
+}   
 .for-registr-h{
     text-align: center;
-    margin-bottom: 1%;
+    /* margin-bottom: 1%; */
 }
 .for-registr-p{
-    margin-left: 10px;
+    text-align: center;
     margin-bottom: 10%;
 }
 .sign2{
     /* margin-left: 18%; */
-    width: 60%;
+    /* width: 60%; */
     background-color: #1985AC;
 }
+/* CENTRE PAGE */
+.centre-my-page{
+    /* height: 230%; */
+}
+
 /* FOOTER */
 .footer1{
     padding: 0px 10px;
@@ -159,6 +165,36 @@ body {
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 50px;   
     align-items: center;
+}
+@media (max-width: 1000px){
+    .div2{
+        display: none;
+    }
+    .div1{
+        width: 55%;
+        font-size: 15px;
+    }
+}
+/* @media (max-height: 1000px){
+    .main{
+        height: 200px;
+    }
+} */
+@media (max-width: 500px){
+    .div2{
+        display: none;
+    }
+    .div1{
+        /* display: flex; */
+        width: 70%;
+        font-size: 10px;
+    }
+    .container1{
+        margin-top: 40%;
+    }
+    .a-for-mobile{
+        display: none;
+    }
 }
