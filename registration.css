@@ -13,49 +13,38 @@ body {
 }
 /* header */
 .wrap{
-    /* width: 100%; */
     margin-left: 3%;
+    overflow: hidden
 }
-
+/* .container1{
+    max-width: 94%;
+    height: 50%;
+} */
+.for-smart{
+    color: #353a40;
+}
 /* form and section */
 .section1{
     margin-top: 8%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .container{
     position: relative;
     max-width: 430px;
     width: 100%;
-    background: #fff;
-    border-radius: 10px;
+    /* background: #fff; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 0 20px;
 }
 .container .forms{
-    display: flex;
-    align-items: center;
-    height: 440px;
     width: 200%;
-    transition: height 0.2s ease;
 }
 .container .form{
     width: 50%;
     padding: 30px;
     background-color: #fff;
-    transition: margin-left 0.18s ease;
-}
-
-.container.active .login{
-    margin-left: -50%;
-    opacity: 0;
-    transition: margin-left 0.18s ease;
-}
-
-.container.active .forms{
-    height: 600px;
+    border-radius: 10px;
 }
 
 .container .form .title{
@@ -84,15 +73,7 @@ body {
 }
 
 .form .checkbox-text{
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
     margin-top: 20px;
-}
-
-.checkbox-text .checkbox-content{
-    display: flex;
-    align-items: center;
 }
 
 .checkbox-content input{
@@ -101,7 +82,6 @@ body {
 }
 
 .form .text{
-    color: #333;
     font-size: 14px;
 }
 
@@ -118,7 +98,7 @@ body {
 }
 
 .form .button input{
-    border: none;   
+    border: none;
     color: #fff;
     font-size: 17px;
     font-weight: 500;
@@ -126,10 +106,6 @@ body {
     border-radius: 6px;
     background-color: #353a40;
     cursor: pointer;
-}
-
-.button input:hover{
-    background-color: #000;
 }
 
 .form .login-signup{
