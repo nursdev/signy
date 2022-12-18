@@ -6,16 +6,20 @@
   padding: 0;
   border: none;
   /* border: 1px solid red; */
+  transition: width 1s ease 0s;
 }
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  /* height: 100%;
+  overflow: hidden; */
 }
 .container {
   max-width: 80%;
   margin: 0 auto;
   padding: 0 10px;
-  position: relative;
+  /* position: relative; */
 }
+
 .header {
   background: linear-gradient(
     293.97deg,
@@ -33,6 +37,7 @@ body {
   align-items: center;
   padding-top: 15px;
   width: 100%;
+  margin-bottom: 40px;
 }
 .header-menu {
   width: 70%;
@@ -49,6 +54,9 @@ body {
   display: flex;
   align-items: center;
 }
+.header-logo h2 {
+  margin-left: 5px;
+}
 .header-link {
   list-style: none;
 }
@@ -56,6 +64,7 @@ body {
   width: 24px;
   height: 24px;
 }
+
 .entry {
   padding: 5px 15px;
   background-color: transparent;
@@ -72,30 +81,29 @@ body {
   text-decoration: none;
   color: #000;
 }
-.a-for_signy{
-  text-decoration: none;
-  color: inherit;
-}
 @media (max-width: 1180px) {
-  .header__body {
+  .header-body {
     display: block;
   }
-  .header__list {
+  .header-list {
     display: block;
   }
-  .header__link {
+  .header-link {
     margin-top: 15px;
   }
-  .header__menu {
+  .header-menu {
     display: none;
   }
-  .header__burger {
+  .header-burger {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     margin-top: 22px;
   }
+}
+@media (max-width: 768px) {
+  
 }
 
 /* SECTIONS */
