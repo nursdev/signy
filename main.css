@@ -6,7 +6,7 @@
   padding: 0;
   border: none;
   /* border: 1px solid red; */
-  transition: width 1s ease 0s;
+  /* transition: width 1s ease 0s; */
 }
 body {
   font-family: "IBM Plex Sans", sans-serif;
@@ -20,6 +20,11 @@ body {
   /* position: relative; */
 }
 
+.header__slide {
+  background-color: #000;
+  position: absolute;
+  z-index: 10;
+}
 .header {
   background: linear-gradient(
     293.97deg,
@@ -30,7 +35,182 @@ body {
 .header__burger {
   display: none;
 }
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
 
+.slideBtn {
+  display: inline-block;
+  padding: 1em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #1064e5;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.slideContainer {
+  max-width: 80%;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mySlideShow {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.mySlideShow__left {
+  max-width: 50%;
+}
+.mySlideShow__right {
+  width: 50%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.heroImg {
+  max-width: 100%;
+  min-height: 70vh;
+  /* background-size: cover; */
+  object-fit: contain;
+}
+.slideTitle {
+  font-weight: 500;
+  font-size: 3vw;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.slideSubTitle {
+  font-weight: 500;
+  font-size: 2.2vw;
+  margin: 20px 0;
+}
+.slideParaph {
+  font-weight: 400;
+  font-size: 1vw;
+  margin: 20px 0;
+}
+
+.slideBtn {
+  display: inline-block;
+  padding: 1em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #1064e5;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.slideBtn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #1064e5;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  /* top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: -25px;
+  transition: 1.6s ease;
+  border-radius: 0 3px 3px 0; */
+  height: 100%;
+  width: 10%;
+}
+
+.hline {
+  display: inline-block;
+
+  border-bottom: 2px solid #1064e5;
+  width: 15px;
+  margin-bottom: 5px;
+}
+.activeSpan {
+  font-weight: 700;
+}
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  /* -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s; */
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+/* @-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 30em) {
+  .slideBtn {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
 .header__body {
   display: flex;
   justify-content: space-between;
@@ -84,13 +264,13 @@ body {
 }
 
 .header__content {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
   height: 92vh;
   margin-top: 50px;
   max-width: 100%;
-  position: relative;
+  position: relative; */
   /* flex-wrap: wrap; */
 }
 
@@ -152,6 +332,7 @@ body {
 .dot {
   width: 12px;
   height: 12px;
+  margin-bottom: 20px;
 }
 .slider-dots {
   position: absolute;
@@ -190,7 +371,16 @@ body {
   flex-wrap: wrap;
   row-gap: 20px;
   column-gap: 20px;
+  transform: translate(0px 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
+
+.security__list__active {
+  transform: translate(0px 0px);
+  opacity: 1;
+}
+
 .security__item {
   list-style: none;
   display: flex;
