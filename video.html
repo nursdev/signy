@@ -5,43 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="jquery-3.6.2.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-<link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='all' />
+    <script src="/jquery-3.6.2.js"></script>
+    <link rel="stylesheet" href="/video.css">
 </head>
 <body>
-    <h6>Signy.online / Видеоинструкции</h6>
 
-    <div id="videoPage">
-        <h1>Видеоинструкции</h1>
-        <h2>Создание документов в Signy</h2>
-        <h5>05.11.20</h5>
+    <div id="mainDiv">
+<h5>Signy.online / Видеоинструкции</h5>
 
-        <a href="http://www.youtube.com/watch?v=fcoNym1Q1Ds" rel="prettyPhoto" title="Заголовок">
-            <img src="https://i.ytimg.com/vi/fcoNym1Q1Ds/hqdefault.jpg" alt="YouTube" width="60" />
-            </a>
-            <script type="text/javascript" charset="utf-8">
-                $(document).ready(function(){
-                  $("a[rel^='prettyPhoto']").prettyPhoto();
-                });
-                </script>
+<br>
+<h2>Видеоинструкции</h2>
+<h3>Создание документов в Signy</h3>
+
+    <div class="page">
+       
 
 
-
-<!-- ссылка на видео -->
-<a title="Pug Life - Simon's Cat" rel="prettyPhoto" href="https://www.youtube.com/watch?v=fcoNym1Q1Ds&rel=0">
-	<img class="scale-with-grid" src="https://i.ytimg.com/vi/fcoNym1Q1Ds/hqdefault.jpg" width="626" height="352" alt="Simon's Cat Pug Life" />
-</a>
-
-<!-- указываем настройки YouTube в iframe -->
-<script type="text/javascript" charset="utf-8">
-$(document).ready(function(){
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        iframe_markup: '<iframe src ="{path}&autohide=1&iv_load_policy=3&iv_load_policy=3&showinfo=0" width="{width}" height="{height}" frameborder="no"></iframe>'
-    });
-});
-</script>
+    <h5>05.11.20</h5>
+        <p><a href="#media-popup" data-media="//www.youtube.com/embed/iQDapoyS2-M">click me</a></p>
+        
+        <div class="popup" id="media-popup">
+            <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
+</div>
 
+    <script>$("[data-media]").on("click", function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var videoUrl = $this.attr("data-media");
+        var popup = $this.attr("href");
+        var $popupIframe = $(popup).find("iframe");
+        
+        $popupIframe.attr("src", videoUrl);
+        
+        $this.closest(".page").addClass("show-popup");
+    });
+    
+    $(".popup").on("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        $(".page").removeClass("show-popup");
+    });
+    
+    $(".popup > iframe").on("click", function(e) {
+        e.stopPropagation();
+    });</script>
+    
 </body>
 </html>
