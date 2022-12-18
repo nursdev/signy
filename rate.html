@@ -169,8 +169,31 @@
         <section class="integration">
           <div class="integration__wrapper">
             <div>
-              <a href="#" class="active-btn" id="one">Одно интеграция</a>
-              <a href="#" id="two">Full - интеграция</a>
+              <a href="#$" onclick="changeInt(this)" class="active-btn" id="one"
+                >Одно интеграция</a
+              >
+              <a href="#$" onclick="changeInt(this)" id="two"
+                >Full - интеграция</a
+              >
+            </div>
+          </div>
+
+          <div class="integration__content">
+            <div class="integration__content__card">
+              <h3 id="title">Интеграция с одной системой ЕДО <span>*</span></h3>
+              <div class="integration__card__wrapper">
+                <div class="integration__content__card__left">
+                  <p id="year">1 год</p>
+                  <h3 id="price">1500 ₴</h3>
+                  <p id="integ__flag">
+                    Интеграция с одной из возможных систем ЕДО на выбор
+                  </p>
+                  <a id="buy" href="#">Купить</a>
+                </div>
+                <div class="integration__content__card__right">
+                  <img id="img" src="./images/rate/integ1.png" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -191,5 +214,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
