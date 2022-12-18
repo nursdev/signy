@@ -58,7 +58,9 @@ body {
   text-align: center;
   transition: all 0.2s;
 }
-
+.index span {
+  font-size: 24px;
+}
 .slideContainer {
   max-width: 80%;
   padding: 0 10px;
@@ -149,6 +151,9 @@ body {
   height: 100%;
   width: 10%;
 }
+.prev {
+  margin-left: -120px;
+}
 
 .hline {
   display: inline-block;
@@ -174,14 +179,16 @@ body {
   height: 13px;
   width: 13px;
   margin: 0 2px;
-  background-color: #bbb;
+  /* background-color: #bbb; */
+  background-color: transparent;
+  border: 1px solid #1064e5;
   border-radius: 50%;
   display: inline-block;
 }
 
 .active,
 dot:hover {
-  background-color: #717171;
+  background-color: #1064e5;
 }
 
 .fade {
@@ -233,12 +240,20 @@ dot:hover {
   max-width: 100%;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
+.header__list a {
+  font-weight: 500;
+}
+.header__list {
+  font-weight: 500;
+}
 .header__logo {
   display: flex;
   align-items: center;
 }
-.header__logo h2 {
+.header__logo h2 a {
   margin-left: 5px;
+  text-decoration: none;
+  color: #000;
 }
 
 .header__link {
@@ -250,20 +265,34 @@ dot:hover {
 }
 
 .entry {
-  padding: 5px 15px;
+  padding: 8px 15px;
   background-color: transparent;
   border: 1px solid #1064e5;
   border-radius: 20px;
   text-decoration: none;
   color: #000;
+  font-weight: 500;
+}
+.entry:hover {
+  background-color: #1064e5 !important;
+  color: #fff;
 }
 .registration {
-  padding: 5px 15px;
-  background-color: transparent;
+  padding: 8px 15px;
+  background-color: #1064e5;
   border: 1px solid #1064e5;
+  color: #fff !important;
   border-radius: 20px;
   text-decoration: none;
-  color: #000;
+}
+
+.registration:hover {
+  background: linear-gradient(
+    293.97deg,
+    #ffffff -9.96%,
+    rgba(222, 238, 252, 1) 111.88%
+  );
+  color: #000 !important;
 }
 
 .header__content {
@@ -294,11 +323,13 @@ dot:hover {
   .header__body {
     display: block;
   }
+
   .header__list {
     display: block;
   }
+
   .header__link {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .header__menu {
     display: none;
@@ -357,6 +388,9 @@ dot:hover {
   /* background-color: #fff; */
 }
 .phone:hover {
+  background-color: #d8f1f0;
+}
+.header__link a:hover {
   background-color: #d8f1f0;
 }
 .lists {

@@ -186,10 +186,10 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "flex";
   if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-18%";
 
-  // var cssSelector = anime({
-  //   targets: ".mySlideShow" + slideIndex,
-  //   translateX: "10%",
-  // });
+  var cssSelector = anime({
+    targets: ".mySlideShow" + slideIndex,
+    translateX: "10%",
+  });
 }
 
 function showPhone() {
@@ -211,4 +211,7 @@ function showList() {
   lists[0].style.display = "block";
 }
 
-function hideList() {}
+function hideList() {
+  let lists = document.getElementsByClassName("lists");
+  lists[0].style.display = "none";
+}
