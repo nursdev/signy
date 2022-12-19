@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
   
   if($result) {
     // echo "Data inserted successfully";
-    header('location:display.php');
+    header('location:index.html');
   } else {
     die(mysqli_error($con));
   }
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])) {
                     <div class="form login">
                         <span class="title">Регистрация</span>
                         
-                            <form action="#">
+                            <form method="post" action="#">
                                 <div class="input-field">
                                     <input class="inp-email" type="text" name="name" placeholder="Введите ваше имя" required>
                                 </div>
@@ -65,7 +65,9 @@ if(isset($_POST['submit'])) {
                                 </div>
         
                                 <div class="input-field button">
-                                    <input type="button" value="Зарегестрироваться">
+                                    <button class="for-button" type="submit" name="submit">Зарегестрироваться</button>
+                                    <!-- <input type="submit" value="Зарегестрироваться"> -->
+                                    <a href="./registation.css"></a>
                                 </div>
                             </form>
         

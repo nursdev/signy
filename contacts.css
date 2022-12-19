@@ -193,6 +193,9 @@ textarea{
   width: 13%;
   font-size: 16px;
 }
+.for-submit{
+  cursor: pointer;
+}
 
 /* FOOTER */
 .footer{
@@ -214,6 +217,7 @@ textarea{
 .second_li-footer-row {
   margin-bottom: 20px;
 }
+
 @media (max-width: 1180px) {
   .header-body {
     display: block;
@@ -312,7 +316,7 @@ textarea{
     font-size: 12px;
   }
   input, textarea{
-    width: 400%;
+    width: 100%;
     border-radius: 25px;
     display: block;
     font-size: 10px;
@@ -369,9 +373,9 @@ textarea{
   .total-div{
     max-width: 100%;
   }
-  /* .for-information{
+  .for-information{
     max-width: 100%;
-  } */
+  } 
   .section2{
     font-size: 15px;
   }
