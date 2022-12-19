@@ -184,7 +184,7 @@ function showSlides(n) {
 
   dots[slideIndex - 1].className += " active";
   slides[slideIndex - 1].style.display = "flex";
-  if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-18%";
+  if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-10%";
 
   var cssSelector = anime({
     targets: ".mySlideShow" + slideIndex,
@@ -214,4 +214,8 @@ function showList() {
 function hideList() {
   let lists = document.getElementsByClassName("lists");
   lists[0].style.display = "none";
+}
+
+function buy(n) {
+  console.log(n);
 }
