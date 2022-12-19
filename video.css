@@ -7,6 +7,12 @@ body {
 p {
     margin:0;
 }
+#mainDiv{
+width: 100%;
+height: 100%;
+
+margin-left: 5%;
+}
 
 
 .popup {
@@ -34,3 +40,33 @@ p {
     margin-left:-280px;
 }
    
+#img1{
+    width: 80%;
+}
+
+.tableD{
+    width: 85%;
+display: table;
+}
+.rowD{
+    width: 100%;
+display: table-row;
+}
+.cellD{
+    display: table-cell;
+    width: 25%;
+}
+.imgD{
+    width: 89%;
+    
+	
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+#intersno{
+    margin-left: 30%;
+}
+#ytplay{
+    margin-top: 5%;
+}

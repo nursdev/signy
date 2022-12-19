@@ -5,10 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/jquery-3.6.2.js"></script>
+    <link rel="stylesheet" href="/video.css">
 </head>
 <body>
-    <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+
+    <div id="mainDiv">
+<h5>Signy.online / Видеоинструкции</h5>
+
+<br>
+<h1>Видеоинструкции</h1>
+<h3>Создание документов в Signy</h3>
+
+    <div class="page">
+       
+
+
+    <h5>05.11.20</h5>
+        <p><a href="#media-popup" data-media="//www.youtube.com/embed/iQDapoyS2-M"><img id="img1" src="/images/video/video1.PNG" alt=""></a></p>
+        
+        <div class="popup" id="media-popup">
+            <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+     </div>
+
+    <iframe id="ytplay" type="text/html" width="640" height="360"
+  src="//www.youtube.com/embed/YZ4Ix10Ou-s"
   frameborder="0"></iframe>
+
+    <h1 id="intersno" >Может быть интересно</h1>
+    <div class="tableD">
+      <table class="rowD">
+        <div class="cellD" ><img class="imgD" src="/images/blog/13.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Три шага к настройке электронного документооборота в строительной компании</p></div></div>
+        <div class="cellD"><img class="imgD" src="/images/blog/12.png" alt=""><h3 class="datetime"></h3><p class="textOfNews"></p></div>
+        <div class="cellD"><img class="imgD" src="/images/blog/11-1.png" alt=""><h3 class="datetime"></h3><p class="textOfNews"></p></div>
+        
+        
+     
+      </table>
+    </div>
+</div>
+
+
+
+    <script>$("[data-media]").on("click", function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var videoUrl = $this.attr("data-media");
+        var popup = $this.attr("href");
+        var $popupIframe = $(popup).find("iframe");
+        
+        $popupIframe.attr("src", videoUrl);
+        
+        $this.closest(".page").addClass("show-popup");
+    });
+    
+    $(".popup").on("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        $(".page").removeClass("show-popup");
+    });
+    
+    $(".popup > iframe").on("click", function(e) {
+        e.stopPropagation();
+    });</script>
+
+
+    
 </body>
 </html>
