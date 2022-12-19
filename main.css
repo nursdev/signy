@@ -4,20 +4,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: none;
+  /* border: none; */
   /* border: 1px solid red; */
   /* transition: width 1s ease 0s; */
 }
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  /* height: 100%;
-  overflow: hidden; */
+  overflow-x: hidden;
 }
 .container {
   max-width: 80%;
   margin: 0 auto;
   padding: 0 10px;
-  /* position: relative; */
 }
 
 .header__slide {
@@ -99,7 +98,7 @@ body {
 }
 .slideTitle {
   font-weight: 500;
-  font-size: 3vw;
+  font-size: 3em;
   line-height: 1;
   margin-bottom: 20px;
 }
@@ -231,7 +230,7 @@ dot:hover {
 }
 .header__menu {
   width: 70%;
-  transition: 0.4, ease;
+  /* transition: 5.4, ease; */
 }
 .header__list {
   display: flex;
@@ -327,7 +326,14 @@ dot:hover {
   .header__list {
     display: block;
   }
-
+  .slideTitle {
+    margin-top: 150px;
+    font-size: 30px;
+    margin-right: 90%;
+  }
+  .slideParaph {
+    font-size: 1.5em;
+  }
   .header__link {
     margin-top: 20px;
   }
@@ -340,6 +346,7 @@ dot:hover {
     right: 0;
     top: 0;
     margin-top: 22px;
+    margin-right: 20px;
   }
 }
 .header__left h1 {
@@ -471,6 +478,8 @@ dot:hover {
 .product {
   margin-top: 50px;
   background-color: #d8f1f0;
+
+  width: 100vw !important;
 }
 
 .product__top {
@@ -503,13 +512,22 @@ dot:hover {
 }
 
 .product__top__left a {
-  padding: 10px 30px;
+  display: inline-block;
+  padding: 1em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
   border: 1px solid #1064e5;
   background-color: transparent;
-  border-radius: 24px;
-  text-decoration: none;
-  color: #000;
-  font-weight: 700;
+  text-align: center;
+  transition: all 0.2s;
+}
+.product__top__left a:hover {
+  background-color: #1064e5;
+  color: #fff;
 }
 .product__top__right {
   max-width: 45%;
@@ -544,14 +562,22 @@ dot:hover {
   margin-bottom: 20px;
 }
 .product__bottom__right a {
-  padding: 10px 15px;
-  border: 1px solid #1064e5;
-  border-radius: 24px;
+  display: inline-block;
+  padding: 1em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
   text-decoration: none;
-  background-color: #1064e5;
+  font-weight: 500;
   color: #fff;
-  font-size: 14px;
-  font-weight: 700;
+  border: 1px solid #1064e5;
+  background-color: #1064e5;
+  text-align: center;
+  transition: all 0.2s;
+}
+.product__bottom__right a:hover {
+  color: #000;
+  background-color: transparent;
 }
 
 .product__bottom__right h2 {
@@ -570,7 +596,7 @@ dot:hover {
 .tarif__wrapper {
   display: flex;
   justify-content: space-between;
-  /* align-items: stretch; */
+  align-items: stretch;
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 20px;
@@ -579,10 +605,10 @@ dot:hover {
 
 .tarif__card {
   background-color: #deeefc;
-  padding: 10px;
+  padding: 20px;
   overflow: hidden;
   border-radius: 5px;
-  width: 200px;
+  width: 230px;
   min-height: 280px;
   position: relative;
 }
@@ -603,18 +629,24 @@ dot:hover {
   font-weight: 700;
   font-size: 48px;
 }
-
+/* paojefpwnqf */
 .tarif__regis {
-  background-color: #1064e5;
-  border-radius: 24px;
-  font-size: 14px;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+
+  /* margin: 0 0.3em 0.3em 0; */
+  border-radius: 2em;
+  box-sizing: border-box;
   text-decoration: none;
+  font-weight: 500;
   color: #fff;
-  padding: 5px 3%;
-  position: absolute;
-  bottom: 4%;
-  left: 5%;
+  border: 1px solid #1064e5;
+  background-color: #1064e5;
+  text-align: center;
+  transition: all 0.2s;
   /* height: 100%; */
+  position: absolute;
+  bottom: 5%;
 }
 
 /* DOCUMENT */

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>Main</title>
     <link rel="stylesheet" href="./main.css" />
   </head>
@@ -157,7 +160,7 @@
               <a onclick="plusSlide(-1)" class="prev"></a>
               <a onclick="plusSlide(1)" class="next"></a>
             </div>
-            <div style="text-align: center">
+            <div style="text-align: center; margin-left: -100px">
               <span class="dot active" onclick="currentSlide(1)"></span>
 
               <span class="dot" onclick="currentSlide(2)"></span>
@@ -183,19 +186,19 @@
           <li class="security__item">
             <img src="./images/main/items/item2.svg" alt="" />
             <div class="security__item__text">
-              <h3>Моментально</h3>
-              <span>Никаких задержек.</span>
+              <h3>Глобально</h3>
+              <span>Сервис доступен 24/7 со</span>
               <br />
-              <span>1 секунд на подписание.</span>
+              <span>всех устройств</span>
             </div>
           </li>
           <li class="security__item">
             <img src="./images/main/items/item3.svg" alt="" />
             <div class="security__item__text">
-              <h3>Моментально</h3>
-              <span>Никаких задержек.</span>
+              <h3>Экономия</h3>
+              <span>В 30 раз дешевле, чем почта</span>
               <br />
-              <span>1 секунд на подписание.</span>
+              <span>и курьеры</span>
             </div>
           </li>
         </ul>
@@ -234,22 +237,20 @@
             <img src="./images/main/product-bottom.png" alt="" />
           </div>
           <div class="product__bottom__right">
-            <h2>Комфорт в работе</h2>
+            <h2>Наш продукт это:</h2>
             <ul class="product__bottom__list">
               <li class="product__bottom__item">
-                Создавай документы по своим личным привычным шаблонам. Это
-                индивидуально!
+                Web-версия без установки программного обеспечения
               </li>
               <li class="product__bottom__item">
-                Настраивай порядок подписания документа, если вас несколько
-                человек в команде. Это ответственно!
+                Возможность бесплатно и безлимитно обрабатывать входящие
+                документы
               </li>
               <li class="product__bottom__item">
-                XML файл с собственным шаблоном готового документа. Это удобно!
+                Простота интеграции с программами для учета и другими сервисами
               </li>
               <li class="product__bottom__item">
-                Работай в супер простом и понятном интерфейсе без сложностей.
-                Это приятно!
+                Поддержка входа через Mobile ID
               </li>
             </ul>
             <a href="#">УЗНАТЬ БОЛЬШЕ</a>
@@ -269,7 +270,9 @@
             <br />
             <br />
             <br />
-            <a class="tarif__regis" href="">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+            <a class="tarif__regis" href="./registration.html"
+              >ЗАРЕГИСТРИРОВАТЬСЯ</a
+            >
           </div>
           <div class="tarif__card">
             <h3>Business</h3>
@@ -293,9 +296,9 @@
             <h3>Individual</h3>
             <p>Необмежена кількість документів</p>
             <!-- <p><span>0</span> грн/місяць</p>  -->
+            <!-- <br />
             <br />
-            <br />
-            <br />
+            <br /> -->
             <a class="tarif__regis" href="">Связаться с нами</a>
           </div>
         </div>
