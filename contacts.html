@@ -11,32 +11,59 @@
     <div class="main">
       <header class="header">
         <div class="container">
-          <div class="header-body">
-            <div href="#" class="header-logo">
+          <div class="header__body">
+            <div href="#" class="header__logo">
               <a href="">
                 <img src="./images/logo.svg" alt="" />
               </a>
 
-              <h2>Signy</h2>
+              <h2>
+                <a href="./index.html">Signy</a>
+              </h2>
             </div>
 
-            <div onclick="showMenu()" class="header-burger">
+            <div onclick="showMenu()" class="header__burger">
               <img id="menuBtn" src="./images/menu.svg" alt="" />
             </div>
 
-            <nav class="header-menu">
-              <ul class="header-list">
-                <li class="header-link">0 800 750 643</li>
-                <li class="header-link">ПРО НАС</li>
-                <li class="header-link">ЦЕНЫ</li>
-                <li class="header-link">КОНТАКТЫ</li>
-                <li class="header-link">
-                  <a href="" class="entry">ВХОД</a>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li
+                  class="header__link"
+                  onmouseover="showPhone()"
+                  onmouseout="hidePhone()"
+                >
+                  <a href="tel:0 800 750 643">0 800 750 643</a>
+                  <a class="phone" href="tel:044 334 56 43">044 334 56 43</a>
                 </li>
-                <li class="header-link">
-                  <a href="" class="registration">РЕГИСТРАЦИЯ</a>
+                <li
+                  class="header__link"
+                  onmouseover="showList()"
+                  onmouseout="hideList()"
+                >
+                  <a href="">О НАС</a>
+                  <div class="lists">
+                    <a href="./blog.html">БЛОГ</a>
+                    <br />
+                    <a href="./video.html">ВИДЕО</a>
+                    <br />
+                    <a href="./questions.html">ВОПРОСЫ</a>
+                  </div>
                 </li>
-                <li class="header-link">РУС</li>
+                <li class="header__link">
+                  <a href="./rate.html">ТАРИФЫ</a>
+                </li>
+                <li class="header__link">
+                  <a href="./contacts.html">КОНТАКТЫ</a>
+                </li>
+                <li class="header__link">
+                  <a href="./signIn.html" class="entry">ВХОД</a>
+                </li>
+                <li class="header__link">
+                  <a href="./registration.html" class="registration"
+                    >РЕГИСТРАЦИЯ</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
@@ -138,7 +165,6 @@
               placeholder="mail@mail.com"
             />
             <label class="label1" for="telephone">Телефон*:</label>
-<<<<<<< HEAD
             <input
               class="input"
               type="text"
@@ -157,63 +183,10 @@
               <div class="for-submit-button">
                 <input class="for-submit" type="button" value="ОТПРАВИТЬ" />
               </div>
-=======
-            <input class="input" type="text" name="telephone" placeholder="+38(XXX)XXX-XX-XX">
-            <label class="label2" for="sms">Сообщение:
-            <textarea  name="text"  id="txtarea" cols="30" rows="5" placeholder="Текст сообщения"></textarea>
-            <div class="for-submit-button">
-              <input class="for-submit" type="submit" value="ОТПРАВИТЬ">
-            </div>
->>>>>>> c5982887e46b8a8daf92ced095738aac60d8b012
             </label>
           </form>
         </div>
       </div>
-<<<<<<< HEAD
-      <footer class="footer">
-        <div class="wrapper">
-          <ul class="first_ul-footer">
-            <li class="first_li-footer-col">
-              <a href="">
-                <img src="./images/logo.svg" alt="" />
-              </a>
-            </li>
-            <li class="first_li-footer-col">
-              <ul class="second_ul-footer-row">
-                <li class="second_li-footer-row">Про нас</li>
-                <li class="second_li-footer-row">Тарифы</li>
-                <li class="second_li-footer-row">Вход</li>
-                <li class="second_li-footer-row">Регистрация</li>
-              </ul>
-            </li>
-            <li class="first_li-footer-col">
-              <ul class="second_ul-footer-row">
-                <li class="second_li-footer-row">Про нас</li>
-                <li class="second_li-footer-row">Тарифы</li>
-                <li class="second_li-footer-row">Вход</li>
-                <li class="second_li-footer-row">Регистрация</li>
-              </ul>
-            </li>
-            <li class="first_li-footer-col">
-              <ul class="second_ul-footer-row">
-                <li class="second_li-footer-row">Про нас</li>
-                <li class="second_li-footer-row">Тарифы</li>
-                <li class="second_li-footer-row">Вход</li>
-                <li class="second_li-footer-row">Регистрация</li>
-              </ul>
-            </li>
-            <li class="first_li-footer-col">
-              <ul class="second_ul-footer-row">
-                <li class="second_li-footer-row">Про нас</li>
-                <li class="second_li-footer-row">Тарифы</li>
-                <li class="second_li-footer-row">Вход</li>
-                <li class="second_li-footer-row">Регистрация</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </footer>
-=======
         <footer class="footer">
           <div class="wrapper">
             <ul class="first_ul-footer">
@@ -255,7 +228,6 @@
             </ul>
           </div>
         </footer>
->>>>>>> c5982887e46b8a8daf92ced095738aac60d8b012
     </div>
     <script src="./script.js"></script>
   </body>
