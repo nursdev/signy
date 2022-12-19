@@ -15,23 +15,13 @@
           <a href="#">Signy</a>
         </div>
         <div class="header__right">
-          <a href="#">
-            <img class="header__icon" src="./images/phone.svg" alt="" />
-            Перезвоните мне
-          </a>
+          <a class="classMe" href="#$">Перезвоните мне </a>
 
-          <a href="tel">
+          <a href="tel:0800750643">
             <img class="header__icon" src="./images/landphone.svg" alt="" />
             0-800-750-643
           </a>
-          <a href="">Вход</a>
-          <a href="">
-            <img class="header__icon" src="./images/web.svg" alt="" />
-            <select name="" id="">
-              <option>English</option>
-              <option>Русский</option>
-            </select>
-          </a>
+          <a href="./signIn.html" class="signIn">Вход</a>
         </div>
       </div>
     </header>
@@ -45,13 +35,13 @@
               документами!)
             </p>
             <br />
-            <a href="#">Бесплатно</a>
+            <a href="./buy.html">Бесплатно</a>
 
             <span>50 шт. документов для создания</span>
             <span>5 - допустимое количество учетных записей для работы</span>
           </div>
           <div class="demo__right">
-            <a href="">Попробовать</a>
+            <a href="./buy.html">Попробовать</a>
           </div>
         </div>
       </div>
@@ -80,13 +70,36 @@
                   5 - допустимое количество учетных записей для работы
                 </li>
               </ul>
-              <a href="#" class="card__btn">Купить</a>
+              <a href="./buy.html" onclick="buy(1)" class="card__btn">Купить</a>
             </div>
           </div>
           <div class="card__item">
             <div class="card__title">
-              <h3>Start<span>*</span></h3>
-              <p>Для небольших предприятий</p>
+              <h3>Standard<span>*</span></h3>
+              <p>Економия 250 ₴</p>
+            </div>
+            <!-- <hr /> -->
+            <div class="card__body">
+              <p>1 год (за первым событием)</p>
+              <strong>3000 ₴</strong>
+              <ul class="card__list">
+                <li class="card__list__item">
+                  2500 шт. документов для создания
+                </li>
+                <li class="card__list__item">
+                  1,20 ₴ стоимость 1-ого документа
+                </li>
+                <li class="card__list__item">
+                  10 - допустимое количество учетных записей для работы
+                </li>
+              </ul>
+              <a href="./buy.html" onclick="buy(2)" class="card__btn">Купить</a>
+            </div>
+          </div>
+          <div class="card__item">
+            <div class="card__title">
+              <h3>Business<span>*</span></h3>
+              <p>Економия 3000 ₴</p>
             </div>
             <!-- <hr /> -->
             <div class="card__body">
@@ -94,62 +107,39 @@
               <strong>650 ₴</strong>
               <ul class="card__list">
                 <li class="card__list__item">
-                  500 шт. документов для создания
+                  10000 шт. документов для создания
                 </li>
                 <li class="card__list__item">
-                  1,30 ₴ стоимость 1-ого документа
+                  0,90 ₴ стоимость 1-ого документа
                 </li>
                 <li class="card__list__item">
-                  5 - допустимое количество учетных записей для работы
+                  25 - допустимое количество учетных записей для работы
                 </li>
               </ul>
-              <a href="#" class="card__btn">Купить</a>
+              <a href="./buy.html" onclick="buy(3)" class="card__btn">Купить</a>
             </div>
           </div>
           <div class="card__item">
             <div class="card__title">
-              <h3>Start<span>*</span></h3>
-              <p>Для небольших предприятий</p>
+              <h3>Pro<span>*</span></h3>
+              <p>Все включено</p>
             </div>
             <!-- <hr /> -->
             <div class="card__body">
               <p>1 год (за первым событием)</p>
-              <strong>650 ₴</strong>
+              <strong>22500 ₴</strong>
               <ul class="card__list">
                 <li class="card__list__item">
-                  500 шт. документов для создания
+                  25000 шт. документов для создания
                 </li>
                 <li class="card__list__item">
-                  1,30 ₴ стоимость 1-ого документа
+                  0,90 ₴ стоимость 1-ого документа
                 </li>
                 <li class="card__list__item">
-                  5 - допустимое количество учетных записей для работы
+                  Неограниченое количество учетных записей для работы
                 </li>
               </ul>
-              <a href="#" class="card__btn">Купить</a>
-            </div>
-          </div>
-          <div class="card__item">
-            <div class="card__title">
-              <h3>Start<span>*</span></h3>
-              <p>Для небольших предприятий</p>
-            </div>
-            <!-- <hr /> -->
-            <div class="card__body">
-              <p>1 год (за первым событием)</p>
-              <strong>650 ₴</strong>
-              <ul class="card__list">
-                <li class="card__list__item">
-                  500 шт. документов для создания
-                </li>
-                <li class="card__list__item">
-                  1,30 ₴ стоимость 1-ого документа
-                </li>
-                <li class="card__list__item">
-                  5 - допустимое количество учетных записей для работы
-                </li>
-              </ul>
-              <a href="#" class="card__btn">Купить</a>
+              <a href="./buy.html" onclick="buy(4)" class="card__btn">Купить</a>
             </div>
           </div>
         </div>
@@ -188,7 +178,7 @@
                   <p id="integ__flag">
                     Интеграция с одной из возможных систем ЕДО на выбор
                   </p>
-                  <a id="buy" href="#">Купить</a>
+                  <a id="buy" onclick="buy(5)" href="./buy.html">Купить</a>
                 </div>
                 <div class="integration__content__card__right">
                   <img id="img" src="./images/rate/integ1.png" alt="" />
