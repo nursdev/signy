@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
-    <link rel="stylesheet" href="./contacts.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./contacts.css" />
+  </head>
+  <body>
     <div class="main">
       <header class="header">
         <div class="container">
@@ -43,42 +43,80 @@
         </div>
       </header>
       <div class="all-section">
-          <div class="section1">
-            <a class="a-for_signy" href="./index.html">Signy</a>
-            <span>  / Контакты</span>
-          </div>
+        <div class="section1">
+          <a class="a-for_signy" href="./index.html">Signy</a>
+          <span> / Контакты</span>
+        </div>
         <div class="section2">
-            <h1>Наши контакты</h1>
+          <h1>Наши контакты</h1>
         </div>
         <div class="section3">
           <div class="total-div">
             <div class="for-text">
-              <p>Мы всегда рады ответить на вопросы, связанные с электронным документооборотом, и развивать эффективное сотрудничество. Свяжись с нами удобным способом:</p>
+              <p>
+                Мы всегда рады ответить на вопросы, связанные с электронным
+                документооборотом, и развивать эффективное сотрудничество.
+                Свяжись с нами удобным способом:
+              </p>
             </div>
             <div class="for-information">
               <div class="for-information-1">
-                <img class="icon_mobile" src="./images/contacts/mobile.svg" alt="">
+                <img
+                  class="icon_mobile"
+                  src="./images/contacts/mobile.svg"
+                  alt=""
+                />
                 <ul class="ul_contact">
-                  <li class="li_contact"><a href="tel:0 800 750 643"></a>0 800 750 643</li>
-                  <li class="li_contact"><a href="tel:044 334 56 43"></a>044 334 56 43</li>
-                  <li class="li_contact"><a href="tel:044 338 86 43"></a>044 338 86 43</li>
+                  <li class="li_contact">
+                    <a href="tel:0 800 750 643"></a>0 800 750 643
+                  </li>
+                  <li class="li_contact">
+                    <a href="tel:044 334 56 43"></a>044 334 56 43
+                  </li>
+                  <li class="li_contact">
+                    <a href="tel:044 338 86 43"></a>044 338 86 43
+                  </li>
                 </ul>
               </div>
               <div class="for-information-1">
-                  <img class="icon_letter" src="./images/contacts/letter.svg" alt="">
-                  <ul class="ul_contact">
-                    <li><a class="a-for_email" href="malito:info@signy.online">info@signy.online</a></li>
-                  </ul>
+                <img
+                  class="icon_letter"
+                  src="./images/contacts/letter.svg"
+                  alt=""
+                />
+                <ul class="ul_contact">
+                  <li>
+                    <a class="a-for_email" href="malito:info@signy.online"
+                      >info@signy.online</a
+                    >
+                  </li>
+                </ul>
               </div>
-                <div class="for-information-1">
-                  <img class="icon_location" src="./images/contacts/location.svg" alt="">
-                  <ul class="ul_contact">
-                    <li>пр-т Бажана, 14 А Киев, 02072</li>
-                  </ul>
-                </div>
-           </div>
+              <div class="for-information-1">
+                <img
+                  class="icon_location"
+                  src="./images/contacts/location.svg"
+                  alt=""
+                />
+                <ul class="ul_contact">
+                  <li>пр-т Бажана, 14 А Киев, 02072</li>
+                </ul>
+              </div>
+            </div>
           </div>
-            <div id="map"></div>
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2233913121413!2d77.4051603706222!3d28.50292593193056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce626851f7009%3A0x621185133cfd1ad1!2sGeeksforGeeks!5e0!3m2!1sen!2sin!4v1585040658255!5m2!1sen!2sin"
+              width="400"
+              height="300"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
         </div>
         <div class="section4">
           <h1>...или напишите нам:</h1>
@@ -86,80 +124,86 @@
         <div class="section4-4">
           <form id="form-contacts">
             <label class="label1" for="name">Имя*:</label>
-            <input class="input"  type="text" name="name" placeholder="Введите ваше имя">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              placeholder="Введите ваше имя"
+            />
             <label class="label1" for="email">Электронная почта*:</label>
-            <input class="input"  type="text" name="email" placeholder="mail@mail.com">
+            <input
+              class="input"
+              type="text"
+              name="email"
+              placeholder="mail@mail.com"
+            />
             <label class="label1" for="telephone">Телефон*:</label>
-            <input class="input" type="text" name="telephone" placeholder="+38(XXX)XXX-XX-XX">
-            <label class="label2" for="sms">Сообщение:
-            <textarea  name="text"  id="txtarea" cols="30" rows="5" placeholder="Текст сообщения"></textarea>
-            <div class="for-submit-button">
-              <input class="for-submit" type="button" value="ОТПРАВИТЬ">
-            </div>
+            <input
+              class="input"
+              type="text"
+              name="telephone"
+              placeholder="+38(XXX)XXX-XX-XX"
+            />
+            <label class="label2" for="sms"
+              >Сообщение:
+              <textarea
+                name="text"
+                id="txtarea"
+                cols="30"
+                rows="5"
+                placeholder="Текст сообщения"
+              ></textarea>
+              <div class="for-submit-button">
+                <input class="for-submit" type="button" value="ОТПРАВИТЬ" />
+              </div>
             </label>
           </form>
         </div>
       </div>
-        <footer class="footer">
-          <div class="wrapper">
-            <ul class="first_ul-footer">
-              <li class="first_li-footer-col">
-                  <a href="">
-                    <img src="./images/logo.svg" alt="" />
-                  </a>
-              </li>
-              <li class="first_li-footer-col">
-                <ul class="second_ul-footer-row">
-                  <li class="second_li-footer-row">Про нас</li>
-                  <li class="second_li-footer-row">Тарифы</li>
-                  <li class="second_li-footer-row">Вход</li>
-                  <li class="second_li-footer-row">Регистрация</li>
-                </ul>
-              </li>
-              <li class="first_li-footer-col">
-                <ul class="second_ul-footer-row">
-                  <li class="second_li-footer-row">Про нас</li>
-                  <li class="second_li-footer-row">Тарифы</li>
-                  <li class="second_li-footer-row">Вход</li>
-                  <li class="second_li-footer-row">Регистрация</li>
-                </ul>
-              </li>
-              <li class="first_li-footer-col">
-                <ul class="second_ul-footer-row">
-                  <li class="second_li-footer-row">Про нас</li>
-                  <li class="second_li-footer-row">Тарифы</li>
-                  <li class="second_li-footer-row">Вход</li>
-                  <li class="second_li-footer-row">Регистрация</li>
-                </ul>
-              </li>
-              <li class="first_li-footer-col">
-                <ul class="second_ul-footer-row">
-                  <li class="second_li-footer-row">Про нас</li>
-                  <li class="second_li-footer-row">Тарифы</li>
-                  <li class="second_li-footer-row">Вход</li>
-                  <li class="second_li-footer-row">Регистрация</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </footer>
+      <footer class="footer">
+        <div class="wrapper">
+          <ul class="first_ul-footer">
+            <li class="first_li-footer-col">
+              <a href="">
+                <img src="./images/logo.svg" alt="" />
+              </a>
+            </li>
+            <li class="first_li-footer-col">
+              <ul class="second_ul-footer-row">
+                <li class="second_li-footer-row">Про нас</li>
+                <li class="second_li-footer-row">Тарифы</li>
+                <li class="second_li-footer-row">Вход</li>
+                <li class="second_li-footer-row">Регистрация</li>
+              </ul>
+            </li>
+            <li class="first_li-footer-col">
+              <ul class="second_ul-footer-row">
+                <li class="second_li-footer-row">Про нас</li>
+                <li class="second_li-footer-row">Тарифы</li>
+                <li class="second_li-footer-row">Вход</li>
+                <li class="second_li-footer-row">Регистрация</li>
+              </ul>
+            </li>
+            <li class="first_li-footer-col">
+              <ul class="second_ul-footer-row">
+                <li class="second_li-footer-row">Про нас</li>
+                <li class="second_li-footer-row">Тарифы</li>
+                <li class="second_li-footer-row">Вход</li>
+                <li class="second_li-footer-row">Регистрация</li>
+              </ul>
+            </li>
+            <li class="first_li-footer-col">
+              <ul class="second_ul-footer-row">
+                <li class="second_li-footer-row">Про нас</li>
+                <li class="second_li-footer-row">Тарифы</li>
+                <li class="second_li-footer-row">Вход</li>
+                <li class="second_li-footer-row">Регистрация</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-    <script>
-      function initMap(){
-         var uluru = {lat: 43.2077462, lng: 76.6668635};
-         var map = new google.maps.Map(document.getElementById('map'),{
-          zoom: 5,
-          center: uluru
-         });
-         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-         });
-      }
-    </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2sctvftS32FZhmOtxuSi282a7mHipuk&callback=initMap">
-    </script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

@@ -349,6 +349,7 @@ dot:hover {
     margin-right: 20px;
   }
 }
+
 .header__left h1 {
   font-size: 40px;
   font-weight: 500;
@@ -853,4 +854,8 @@ dot:hover {
 
 .footer__list-row-item {
   margin-bottom: 20px;
+}
+.footer__list-row-item a {
+  text-decoration: none;
+  color: #fff;
 }

@@ -343,7 +343,7 @@ body {
 }
 
 .form__wrapper {
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100%;
   background-color: #fff;
   display: flex;
@@ -403,9 +403,6 @@ body {
   border-radius: 6px;
   background-color: #1064e5;
   color: #fff;
-}
-.container {
-  border: 1px solid red;
 }
 
 .form__wrapper label {
