@@ -1,6 +1,5 @@
 let toggleMENU = true;
 function showMenu() {
-  console.log("asofb");
   if (toggleMENU) {
     let header__list = document.getElementsByClassName("header__menu")[0];
     header__list.style.display = "block";
@@ -15,10 +14,16 @@ function showMenu() {
     toggleMENU = true;
   }
 }
-//TODO қайтадан ресайз жасағанда
-window.addEventListener("resize", function (event) {
-  console.log(event);
-});
+
+var onresize = function (e) {
+  let width = e.target.outerWidth;
+  if (width >= 1180) {
+    let header__list = document.getElementsByClassName("header__menu")[0];
+    header__list.style.display = "block";
+    toggleMENU = false;
+  }
+};
+window.addEventListener("resize", onresize);
 
 function nextSlide(dotnumber) {
   console.log(dotnumber);
@@ -151,7 +156,6 @@ function changeInt(el) {
       buy.style.color = "#fff";
     }
   }
-  //dotnumber.classList.contains("active-dot")
 }
 
 let slideIndex = 1;
@@ -184,7 +188,7 @@ function showSlides(n) {
 
   dots[slideIndex - 1].className += " active";
   slides[slideIndex - 1].style.display = "flex";
-  if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-18%";
+  if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-10%";
 
   var cssSelector = anime({
     targets: ".mySlideShow" + slideIndex,
@@ -214,4 +218,8 @@ function showList() {
 function hideList() {
   let lists = document.getElementsByClassName("lists");
   lists[0].style.display = "none";
+}
+
+function buy(n) {
+  console.log(n);
 }

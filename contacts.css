@@ -45,7 +45,6 @@ body {
 }
 .header-menu {
   width: 70%;
-  transition: 0.4, ease;
 }
 .header-list {
   display: flex;
@@ -70,20 +69,29 @@ body {
 }
 
 .entry {
-  padding: 5px 15px;
+  padding: 8px 15px;
   background-color: transparent;
   border: 1px solid #1064e5;
   border-radius: 20px;
   text-decoration: none;
   color: #000;
+  font-weight: 500;
 }
 .registration {
-  padding: 5px 15px;
-  background-color: transparent;
+  padding: 8px 15px;
+  background-color: #1064e5;
   border: 1px solid #1064e5;
+  color: #fff !important;
   border-radius: 20px;
   text-decoration: none;
-  color: #000;
+}
+.registration:hover {
+  background: linear-gradient(
+    293.97deg,
+    #ffffff -9.96%,
+    rgba(222, 238, 252, 1) 111.88%
+  );
+  color: #000 !important;
 }
 
 @media (max-width: 768px) {
@@ -193,6 +201,9 @@ textarea{
   width: 13%;
   font-size: 16px;
 }
+.for-submit{
+  cursor: pointer;
+}
 
 /* FOOTER */
 .footer{
@@ -214,6 +225,7 @@ textarea{
 .second_li-footer-row {
   margin-bottom: 20px;
 }
+
 @media (max-width: 1180px) {
   .header-body {
     display: block;
@@ -312,7 +324,7 @@ textarea{
     font-size: 12px;
   }
   input, textarea{
-    width: 400%;
+    width: 100%;
     border-radius: 25px;
     display: block;
     font-size: 10px;
@@ -369,9 +381,9 @@ textarea{
   .total-div{
     max-width: 100%;
   }
-  /* .for-information{
+  .for-information{
     max-width: 100%;
-  } */
+  } 
   .section2{
     font-size: 15px;
   }

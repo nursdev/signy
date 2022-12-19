@@ -38,7 +38,12 @@ body {
   align-items: center;
   column-gap: 10px;
 }
-
+.header__left a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
 .header__right {
   width: 60%;
   display: flex;
@@ -47,6 +52,20 @@ body {
   column-gap: 20px;
   row-gap: 20px;
 }
+.header__right a {
+  text-decoration: none;
+}
+
+.classMe {
+  background-color: #20a8d8;
+  color: #fff;
+  padding: 5px 15px;
+  align-items: center;
+  border-radius: 6px;
+}
+.classMe:hover {
+  background-color: #187192;
+}
 
 .header__icon {
   height: 30px;
@@ -54,6 +73,14 @@ body {
 .header__right a {
   display: flex;
   align-items: center;
+}
+.signIn::before {
+  content: "";
+  background: url(./images/rate/signIn.svg) no-repeat;
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+  padding-left: 5px;
 }
 
 .demo {
@@ -251,7 +278,7 @@ body {
   font-size: 22px;
   line-height: 1.5;
   padding: 30px 15px;
-  /* border: 1px solid red; */
+
   border-radius: 40px;
 }
 
@@ -315,6 +342,73 @@ body {
   border-radius: 15px;
 }
 
+.form__wrapper {
+  margin-top: 70px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__wrapper label,
+.form__wrapper input {
+  display: block;
+  margin-bottom: 20px;
+}
+.form__wrapper input[type="text"] {
+  padding: 10px 30%;
+  text-align: left;
+  border: 1px solid #1064e5;
+  border-radius: 6px;
+}
+.form__wrapper input[type="date"] {
+  padding: 10px 30%;
+  text-align: left;
+  border: 1px solid #1064e5;
+  border-radius: 6px;
+}
+.form__wrapper select {
+  padding: 10px 25%;
+  text-align: left;
+  border: 1px solid #1064e5;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.form__inner {
+  max-width: 100%;
+  display: flex;
+  column-gap: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form__wrapper {
+  width: 100%;
+}
+.form__inner__left input {
+  padding: 10px 30%;
+  text-align: left;
+  border: 1px solid #1064e5;
+  border-radius: 6px;
+}
+.form__inner__right input {
+  padding: 10px 30%;
+  text-align: left;
+  border: 1px solid #1064e5;
+  border-radius: 6px;
+}
+.submit {
+  padding: 10px 30%;
+  text-align: left;
+  border: 1px solid #1064e5;
+  border-radius: 6px;
+  background-color: #1064e5;
+  color: #fff;
+}
+
+.form__wrapper label {
+  font-size: 16px;
+  font-weight: 500;
+}
 /* FOOTER */
 .footer {
   background-color: #fff;
