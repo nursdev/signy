@@ -86,7 +86,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 112,5%;
 line-height: 34px;
-/* or 186% */
+
 
 display: flex;
 align-items: center;
@@ -121,10 +121,277 @@ font-weight: 400;
 font-size: 112,5%;
 line-height: 22px;
 margin-left: 0.2%;
-/* or 122% */
+
 color: rgba(6, 18, 36, 0.9);
 
     display: block;
     width: 50%;
+}
+
+@media (max-width: 600px){
+  body{
+    font-family: "IBM Plex Sans", sans-serif;
+    background: linear-gradient(
+    293.97deg,
+    #ffffff -9.96%,
+    rgba(222, 238, 252, 1) 111.88%
+  );
+  padding: 0;
+}
+#main{
+    
+    width: 100%;
+    padding: 2%;
+}
+#strochka{
+    margin-left: 5%;
+    font-size: 60%;
+
+}
+#zagalovok{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 250%;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #061224;
+    opacity: 0.9;
+    margin-bottom: 3%;
+}
+.main-q::-webkit-details-marker{display:none;}
+.main-q::-moz-list-bullet{list-style-type:none;}
+.main-q::marker{display:none;} 
+.main-q {
+   display:inline-block;
+   padding: .3em .5em .3em .4em;
+   font-family: 'IBM Plex Sans';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 150%;
+   line-height: 28px;
+
+
+
+
+
+color: #061224;
+   cursor: pointer;
+}
+
+.main-q:after {  
+  content: "+";
+  margin-left: .3em;
+  display: inline-block;
+  
+  color: #1064E5;
+}
+details[open] > .main-q:after {
+  
+  content: "−";
+  color: #1064E5;
+  
+  
+}
+.main-q ~ * {
+   padding:0 1em 0 1em;
+}
+
+
+details{
+  display:block;
+  margin-bottom: .5rem;
+}
+
+
+
+.answer::-webkit-details-marker{display:none;}
+.answer::-moz-list-bullet{list-style-type:none;}
+.answer::marker{display:none;} 
+.answer {
+   display:inline-block;
+   padding: .3em .5em .3em .4em;
+   font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 112,5%;
+line-height: 34px;
+
+
+
+display: flex;
+align-items: center;
+
+color: rgba(6, 18, 36, 0.9);
+   cursor: pointer;
+}
+.answer:before {  
+  content: "+";
+  margin-right: .3em;
+  color: #1064E5;
+  
+}
+details[open] > .answer:before {
+  content: "−";
+  color: #1064E5;
+  
+}
+
+.answer ~ * {
+   padding:0 1em 0 1em;
+}
+
+details{
+  display:block;
+  margin-bottom: .5rem;
+}
+.textOfAnwser{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 112,5%;
+line-height: 22px;
+margin-left: 0.2%;
+
+color: rgba(6, 18, 36, 0.9);
+
+    display: block;
+    width: 100%;
+}
+}
+@media (max-width: 1400px) and (min-width:600px){
+  body{
+    font-family: "IBM Plex Sans", sans-serif;
+    background: linear-gradient(
+    293.97deg,
+    #ffffff -9.96%,
+    rgba(222, 238, 252, 1) 111.88%
+  );
+  padding: 0;
+}
+#main{
+    
+    width: 100%;
+    padding: 2%;
+}
+#strochka{
+    margin-left: 5%;
+    font-size: 130%;
+
+}
+#zagalovok{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 300%;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #061224;
+    opacity: 0.9;
+    margin-bottom: 3%;
+}
+.main-q::-webkit-details-marker{display:none;}
+.main-q::-moz-list-bullet{list-style-type:none;}
+.main-q::marker{display:none;} 
+.main-q {
+   display:inline-block;
+   padding: .3em .5em .3em .4em;
+   font-family: 'IBM Plex Sans';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 260%;
+   line-height: 28px;
+
+
+
+
+
+color: #061224;
+   cursor: pointer;
+}
+
+.main-q:after {  
+  content: "+";
+  margin-left: .3em;
+  display: inline-block;
+  
+  color: #1064E5;
+}
+details[open] > .main-q:after {
+  
+  content: "−";
+  color: #1064E5;
+  
+  
+}
+.main-q ~ * {
+   padding:0 1em 0 1em;
+}
+
+
+details{
+  display:block;
+  margin-bottom: .5rem;
+}
+
+
+
+.answer::-webkit-details-marker{display:none;}
+.answer::-moz-list-bullet{list-style-type:none;}
+.answer::marker{display:none;} 
+.answer {
+   display:inline-block;
+   padding: .3em .5em .3em .4em;
+   font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 200%;
+line-height: 34px;
+
+
+
+display: flex;
+align-items: center;
+
+color: rgba(6, 18, 36, 0.9);
+   cursor: pointer;
+}
+.answer:before {  
+  content: "+";
+  margin-right: .3em;
+  color: #1064E5;
+  
+}
+details[open] > .answer:before {
+  content: "−";
+  color: #1064E5;
+  
+}
+
+.answer ~ * {
+   padding:0 1em 0 1em;
+}
+
+details{
+  display:block;
+  margin-bottom: .5rem;
+}
+.textOfAnwser{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 200%;
+padding: auto;
+line-height: 22px;
+margin-left: 0.2%;
+
+color: rgba(6, 18, 36, 0.9);
+
+    display: block;
+    width: 100%;
+}
+ 
 }
 

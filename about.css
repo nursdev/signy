@@ -1,7 +1,18 @@
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+    background: linear-gradient(
+    293.97deg,
+    #ffffff -9.96%,
+    rgba(222, 238, 252, 1) 111.88%
+    
+  );
+  
+}
 #blockMain{
+    display: block;
     width: 95%;
     height: 100%;
-    margin-left: 100px;
+    margin-left: 5%;
     padding: 20px;
 }
 #first{
@@ -10,14 +21,15 @@
 }
 .firstimg{
     
-    width:  50%;
+    width:  90%;
+    display: block;
     
-    float: left;
     margin-right: 30px;
     
 }
 .mainNews{
     font-size: 60px;
+    display: block;
     
 }
 .subGroup{
@@ -47,6 +59,7 @@
 .tableD{
     width: 85%;
 display: table;
+padding: 3%;
 }
 .rowD{
     width: 100%;
@@ -55,6 +68,7 @@ display: table-row;
 .cellD{
     display: table-cell;
     width: 25%;
+    margin-bottom: 3%;
 }
 .imgD{
     width: 89%;
@@ -160,4 +174,7 @@ display: table-row;
         font-size: 80%;
     }
 }
+
+
+
 
