@@ -404,9 +404,6 @@ body {
   background-color: #1064e5;
   color: #fff;
 }
-.container {
-  border: 1px solid red;
-}
 
 .form__wrapper label {
   font-size: 16px;

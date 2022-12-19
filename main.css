@@ -230,7 +230,6 @@ dot:hover {
 }
 .header__menu {
   width: 70%;
-  /* transition: 5.4, ease; */
 }
 .header__list {
   display: flex;
