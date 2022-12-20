@@ -188,12 +188,12 @@ function showSlides(n) {
 
   dots[slideIndex - 1].className += " active";
   slides[slideIndex - 1].style.display = "flex";
-  if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-10%";
+  // if (slideIndex != 1) slides[slideIndex - 1].style.marginLeft = "-10%";
 
-  var cssSelector = anime({
-    targets: ".mySlideShow" + slideIndex,
-    translateX: "10%",
-  });
+  // var cssSelector = anime({
+  //   targets: ".mySlideShow" + slideIndex,
+  //   translateX: "10%",
+  // });
 }
 
 function showPhone() {
@@ -222,4 +222,11 @@ function hideList() {
 
 function buy(n) {
   console.log(n);
+}
+
+setInterval(vis, 2000);
+
+function vis() {
+  document.getElementsByTagName("body")[0].style.overflow = "visible";
+  document.getElementsByClassName("load")[0].style.display = "none";
 }

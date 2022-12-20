@@ -9,8 +9,35 @@
     />
     <title>Main</title>
     <link rel="stylesheet" href="./main.css" />
+    <style>
+      .el {
+        width: 24px;
+        height: 24px;
+        background-color: black;
+        margin-bottom: 10px;
+      }
+      .play-pause-demo {
+        display: flex;
+        gap: 20px;
+      }
+      load {
+        position: absolute;
+        left: 50%;
+        top: 42%;
+      }
+    </style>
   </head>
   <body>
+    <div class="load">
+      <div class="play-pause-demo">
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+        <div class="el"></div>
+      </div>
+      
+    </div>
+
     <div class="wrapper">
       <header class="header">
         <div class="container">
@@ -46,7 +73,7 @@
                 >
                   <a href="">О НАС</a>
                   <div class="lists">
-                    <a href="./blog.html">БЛОГ</a>
+                    <a href="./start.html?redirected=blog" >БЛОГ</a>
                     <br />
                     <a href="./video.html">ВИДЕО</a>
                     <br />
@@ -63,7 +90,7 @@
                   <a href="./signIn.html" class="entry">ВХОД</a>
                 </li>
                 <li class="header__link">
-                  <a href="./registration.html" class="registration"
+                  <a href="./registration.php" class="registration"
                     >РЕГИСТРАЦИЯ</a
                   >
                 </li>
@@ -158,8 +185,8 @@
                   </div>
                 </div>
 
-                <a onclick="plusSlide(-1)" class="prev"></a>
-                <a onclick="plusSlide(1)" class="next"></a>
+                <a onclick="plusSlide(-1)" class="prev"> &#10094 </a>
+                <a onclick="plusSlide(1)" class="next">&#10095 </a>
               </div>
             </div>
 
@@ -356,7 +383,8 @@
       <div class="container">
         <div class="question__wrapper">
           <h2>Популярные вопросы и ответы на них</h2>
-          <ul class="question__list">
+          
+           <ul class="question__list">
             <li onclick="showAnswer(this)" id="qi1" class="question__item">
               Почему круглую пиццу ставят в квадратную коробку, а нарезают
               треугольниками?
@@ -430,7 +458,7 @@
                 потребует расходов на бумагу, печать и услуги доставки.
               </p>
             </li>
-          </ul>
+          </ul> 
         </div>
       </div>
     </section>
@@ -469,7 +497,7 @@
                 <a href="./signIn.html">Вход</a>
               </li>
               <li class="footer__list-row-item">
-                <a href="./registration.html">Регистрация</a>
+                <a href="./registration.php">Регистрация</a>
               </li>
             </ul>
           </li>
@@ -505,13 +533,19 @@
     <script src="./script.js"></script>
     <script src="./anime.js"></script>
     <script>
-      setTimeout(animation, 100);
-      function animation() {
-        var cssSelector = anime({
-          targets: ".header__content",
-          translateX: 150,
-        });
-      }
+     var animation = anime({
+        targets: ".el",
+        translateY: 50,
+        delay: function (el, i) {
+          return i * 100;
+        },
+        direction: "alternate",
+        loop: true,
+        autoplay: false,
+        easing: "easeInOutSine",
+      });
+      animation.play();
+     
     </script>
   </body>
 </html>
