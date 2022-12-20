@@ -12,36 +12,46 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-          <div class="header__body">
-            <div href="#" class="header__logo">
-              <a href="">
-                <img src="./images/logo.svg" alt="" />
-              </a>
-              <h2>Signy</h2>
-            </div>
-            <div onclick="showMenu()" class="header__burger">
-              <img id="menuBtn" src="./images/menu.svg" alt="" />
-            </div>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li class="header__link">0 800 750 643</li>
-                <li class="header__link">ПРО НАС</li>
-                <li class="header__link">ЦЕНЫ</li>
-                <li class="header__link">КОНТАКТЫ</li>
-                <li class="header__link">
-                  <a href="" class="entry">ВХОД</a>
-                </li>
-                <li class="header__link">
-                  <a href="" class="registration">РЕГИСТРАЦИЯ</a>
-                </li>
-                <li class="header__link">РУС</li>
-              </ul>
-            </nav>
-          </div>
+  <nav class="header__menu">
+    <ul class="header__list">
+      <li
+        class="header__link"
+        onmouseover="showPhone()"
+        onmouseout="hidePhone()"
+      >
+        <a href="tel:0 800 750 643">0 800 750 643</a>
+        <a class="phone" href="tel:044 334 56 43">044 334 56 43</a>
+      </li>
+      <li
+        class="header__link"
+        onmouseover="showList()"
+        onmouseout="hideList()"
+      >
+        <a href="">О НАС</a>
+        <div class="lists">
+          <a href="./blog.html">БЛОГ</a>
+          <br />
+          <a href="./video.html">ВИДЕО</a>
+          <br />
+          <a href="./questions.html">ВОПРОСЫ</a>
         </div>
-      </header>
+      </li>
+      <li class="header__link">
+        <a href="./rate.html">ТАРИФЫ</a>
+      </li>
+      <li class="header__link">
+        <a href="./contacts.html">КОНТАКТЫ</a>
+      </li>
+      <li class="header__link">
+        <a href="./signIn.html" class="entry">ВХОД</a>
+      </li>
+      <li class="header__link">
+        <a href="./registration.html" class="registration"
+          >РЕГИСТРАЦИЯ</a
+        >
+      </li>
+    </ul>
+  </nav>
 
 
     <div id="blockMain">
@@ -64,10 +74,10 @@
         <div id="secondone">
           <div class="tableD">
             <table class="rowD">
-              <div class="cellD" ><img class="imgD" src="/images/blog/20-1.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Три шага к настройке электронного документооборота в строительной компании</p></div></div>
-              <div class="cellD"><img class="imgD" src="/images/blog/17-1.png"  alt=""><h3 class="datetime">26.11.2022</h3><p class="textOfNews">Как умение Signy интегрироваться с любыми системами делает более удобным ваше сотрудничество с контрагентами
+              <div class="cellD" ><img class="imgD" src="./images/blog/20-1.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Три шага к настройке электронного документооборота в строительной компании</p></div></div>
+              <div class="cellD"><img class="imgD" src="./images/blog/17-1.png"  alt=""><h3 class="datetime">26.11.2022</h3><p class="textOfNews">Как умение Signy интегрироваться с любыми системами делает более удобным ваше сотрудничество с контрагентами
               </p></div>
-              <div class="cellD"><img class="imgD" src="/images/blog/WEB.png" alt=""><h3 class="datetime">05.11.2022</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины</p></div>
+              <div class="cellD"><img class="imgD" src="./images/blog/WEB.png" alt=""><h3 class="datetime">05.11.2022</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины</p></div>
               
               
            
@@ -76,11 +86,11 @@
 
           <div class="tableD">
             <table class="rowD">
-              <div class="cellD" ><img class="imgD" src="/images/blog/16.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Как ускорить диджилизацию документооборота в торговых компаниях
+              <div class="cellD" ><img class="imgD" src="./images/blog/16.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Как ускорить диджилизацию документооборота в торговых компаниях
               </p></div></div>
-              <div class="cellD"><img class="imgD" src="/images/blog/01-3.png" alt=""><h3 class="datetime">25.03.2022</h3><p class="textOfNews">Три мифа, которые мешают вам перейти на электронный документооборот
+              <div class="cellD"><img class="imgD" src="./images/blog/01-3.png" alt=""><h3 class="datetime">25.03.2022</h3><p class="textOfNews">Три мифа, которые мешают вам перейти на электронный документооборот
               </p></div>
-              <div class="cellD"><img class="imgD" src="/images/blog/19.png" alt=""><h3 class="datetime">05.03.2022</h3><p class="textOfNews">В Украине провели опрос о готовности перейти на эТТН
+              <div class="cellD"><img class="imgD" src="./images/blog/19.png" alt=""><h3 class="datetime">05.03.2022</h3><p class="textOfNews">В Украине провели опрос о готовности перейти на эТТН
               </p></div>
               
               

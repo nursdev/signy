@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Видео</title>
-    <script src="/jquery-3.6.2.js"></script>
+    <script src="./jquery-3.6.2.js"></script>
     <link rel="stylesheet" href="/video.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 
         <h5>05.11.20</h5>
-        <p><a id="paernt" href="#media-popup" data-media="//www.youtube.com/embed/d6FKDGjg0z4"><img id="img1" src="/images/video/video1.PNG" alt=""></a></p>
+        <p><a id="paernt" href="#media-popup" data-media="//www.youtube.com/embed/d6FKDGjg0z4"><img id="img1" src="./images/video/video1.PNG" alt=""></a></p>
         
         <div class="popup" id="media-popup">
             <iframe id="ytfr"  src="" frameborder="0" allowfullscreen></iframe>
@@ -34,17 +34,15 @@
     <h1 id="intersno" >Может быть интересно</h1>
     <div class="tableD">
       <table class="rowD">
-        <div class="cellD" ><img class="imgD" src="/images/blog/13.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Три шага к настройке электронного документооборота в строительной компании</p></div></div>
-        <div class="cellD"><img class="imgD" src="/images/blog/12.png" alt=""><h3 class="datetime"></h3><p class="textOfNews"></p></div>
-        <div class="cellD"><img class="imgD" src="/images/blog/11-1.png" alt=""><h3 class="datetime"></h3><p class="textOfNews"></p></div>
+        <div class="cellD" ><img class="imgD" src="./images/blog/13.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Три шага к настройке электронного документооборота в строительной компании</p></div></div>
+        <div class="cellD"><img class="imgD" src="./images/blog/12.png" alt=""><h3 class="datetime"></h3><p class="textOfNews"></p></div>
+        <div class="cellD"><img class="imgD" src="./images/blog/11-1.png" alt=""><h3 class="datetime"></h3><p class="textOfNews"></p></div>
         
         
      
       </table>
     </div>
 </div>
-
-
 
     <script>$("[data-media]").on("click", function(e) {
         e.preventDefault();
@@ -68,8 +66,6 @@
     $(".popup > iframe").on("click", function(e) {
         e.stopPropagation();
     });</script>
-
-
     
 </body>
 </html>
