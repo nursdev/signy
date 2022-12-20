@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "IBM Plex Sans", sans-serif;
+    background: linear-gradient(
+    293.97deg,
+    #ffffff -9.96%,
+    rgba(222, 238, 252, 1) 111.88%
+    
+  );
+        }
+        #mainDiv{
+            padding: 5%;
+        }
+        p{
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        h1{
+            margin-top: 1%;
+            margin-bottom: 1%; 
+        }
+        li{
+            padding: 1%;
+        }
+        @media (max-width:600px) {
+            #mainDiv{
+            padding: 10%;
+        }
+        p{
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        h1{
+            font-size: 130%;
+            margin-top: 1%;
+            margin-bottom: 1%; 
+        }
+        li{
+            padding: 1%;
+        }
+        ol{
+            padding: 8%;
+        }
+        li{
+            padding: 1%;
+        }
+        } 
+        </style>
+        <link rel="stylesheet" href="./main.css" />
+        <script src="./script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div href="#" class="header__logo">
+              <a href="">
+                <img src="./images/logo.svg" alt="" />
+              </a>
+
+              <h2>
+                <a href="./index.html">Signy</a>
+              </h2>
+            </div>
+
+            <div onclick="showMenu()" class="header__burger">
+              <img id="menuBtn" src="./images/menu.svg" alt="" />
+            </div>
+
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li
+                  class="header__link"
+                  onmouseover="showPhone()"
+                  onmouseout="hidePhone()"
+                >
+                  <a href="tel:0 800 750 643">0 800 750 643</a>
+                  <a class="phone" href="tel:044 334 56 43">044 334 56 43</a>
+                </li>
+                <li
+                  class="header__link"
+                  onmouseover="showList()"
+                  onmouseout="hideList()"
+                >
+                  <a href="">О НАС</a>
+                  <div class="lists">
+                    <a href="./blog.html">БЛОГ</a>
+                    <br />
+                    <a href="./video.html">ВИДЕО</a>
+                    <br />
+                    <a href="./questions.html">ВОПРОСЫ</a>
+                  </div>
+                </li>
+                <li class="header__link">
+                  <a href="./rate.html">ТАРИФЫ</a>
+                </li>
+                <li class="header__link">
+                  <a href="./contacts.html">КОНТАКТЫ</a>
+                </li>
+                <li class="header__link">
+                  <a href="./signIn.html" class="entry">ВХОД</a>
+                </li>
+                <li class="header__link">
+                  <a href="./registration.html" class="registration"
+                    >РЕГИСТРАЦИЯ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <div id="mainDiv">
+     <h6></h6>
+     <h1>Три мифа, которые мешают вам перейти на электронный документооборот
+    </h1>
+    <h5>13.10.22</h5>
+    <h1>Миф №1: Сотрудники и контрагенты будут против и замедлят процесс перехода на ЭДО
+    </h1>
+    <p>Люди часто до последнего не признают что-нибудь новое, с чем они еще не знакомы. Поэтому на первых порах важно провести качественное и детальное обучение ваших сотрудников работе с ЭДО. Экономия на обучении является частой ошибкой руководителей, которая в результате может привести к погрешностям или вообще отказу работников от ЭДО, даже если соответствующие технологии уже были внедрены в компании.</p>
+    <p>Аналогичная проблема может возникнуть с контрагентами. Кто-то вообще не пользуется ЭДО, кто-то — отказывается переходить на тот же сервис, что и вы. Но это не проблема, если вы пользователь Signy, ведь он интегрируется с большинством популярных систем ЭДО, среди которых M.E.Doc, Вчасно, Deals и Document.Online, а также с сервисами для расширения ЭДО вроде IT-Enterprise и MASTER. В таком случае следует переходить на электронные документы постепенно, и для начала применять их только с теми компаниями, с кем вы переписываетесь чаще всего.</p>
+    <p>Да, в начале придется потратить время на объяснения и сотрудникам, и контрагентам. Но будьте терпеливы, делайте все постепенно, и в результате это позволит вам повысить производительность вашей компании и экономить время и деньги.</p>
+    <h1>Миф №2: Систему ЭДО могут взломать конкуренты или злоумышленники</h1>
+    <p>Системы ЭДО используют безопасные облачные серверы с брандмауэрами и инструментами кибербезопасности, которые помогают предотвратить взлом сети и разграничить права доступа к тем или иным документам. Авторизация пользователей осуществляется с помощью электронных подписей, а документы передаются через защищенные протоколы.</p>
+    <p>Сервис Signy соответствует украинскому уровню гарантий Г2 (или EAL 3 международного стандарта ISO/IEC 15408 «Common Criteria for Information Technology Security Evaluation»), поэтому может предупреждать и отражать кибератаки.</p>
+    <p>Конечно, невозможно на 100% защитить внутреннюю сеть там, где существует человеческий фактор, но если пользователи будут соблюдать все правила информационной безопасности, то утечки информации из электронных документов не будет.</p>
+    <h1>Миф №3: Электронный документ не является юридически значимым документом</h1>
+    <p>Существует предубеждение, что для проверок налоговой службы или заключения сделок с контрагентами обязательно требуется бумажный документ с мокрой печатью и подписью от руки, а электронный документ можно легко подделать.</p>
+    <p>На самом деле, украинское законодательство давно приравняло электронную подпись к подписи от руки, а электронную печать — к мокрой. Таким образом, подписанный электронной подписью документ считается оригиналом и является юридически значимым, а компания не обязана хранить его печатную версию.</p>
+    <h1>В чем преимущества использования ЭДО</h1>
+    <p>Переходя на ЭДО, вы получаете дополнительные выгоды:
+        <ul>
+            <li>экономите средства компании;</li>
+            <li>можете перераспределить время, которое раньше уходило на работу с бумажными документами, на другие рабочие процессы;</li>
+            <li>повышаете свою репутацию как современной компании;</li>
+            <li>не привязаны к офису и можете работать с документами c любого места и устройства.
+            </li>
+        </ul>
+
+    </p>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item-col">
+            <a href="">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </li>
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">
+                <a href="./index.html">Про нас</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./rate.html">Тарифы</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./signIn.html">Вход</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./registration.html">Регистрация</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">
+                <a href="./blog.html">Блог</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./contacts.html">Наши контакты</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">пр-т Миколи Бажана, 14 А</li>
+              <li class="footer__list-row-item">Київ, 02072</li>
+              <li class="footer__list-row-item">
+                <a href="tel:0800750643">0 800 750 643</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="tel:0443345643">044 334 56 43</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="tel:0443378643">044 337 86 43</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>

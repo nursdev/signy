@@ -7,6 +7,7 @@ body{
     
   );
   
+  
 }
 #blockMain{
     display: block;
@@ -21,32 +22,29 @@ body{
 }
 .firstimg{
     
-    width:  90%;
+    width:  100%;
+    height: 10%;
     display: block;
     
     margin-right: 30px;
     
 }
 .mainNews{
-    font-size: 60px;
+    width: 100%;
+    font-size: 50px;
     display: block;
+    margin-right: 30px;
     
 }
-.subGroup{
-    display: inline-block;
-    width: 30%;
-    margin: 15px;
-}
-.group1{
-    width: 1232px;
-    height: 546px;
-}
+
+
 .imgOfG{
     width: 100%;
     height: 30%;
 }
 #secondone{
     clear: both;
+    width: 100%;
 }
 .textOfNews{
     display: block;
@@ -57,21 +55,23 @@ body{
 }
 
 .tableD{
-    width: 85%;
+    width: 95%;
 display: table;
-padding: 3%;
+
 }
 .rowD{
     width: 100%;
 display: table-row;
+
 }
 .cellD{
     display: table-cell;
-    width: 25%;
-    margin-bottom: 3%;
+    width: 30%;
+    margin-bottom: 5%;
+    margin-right: 10px;
 }
 .imgD{
-    width: 89%;
+    width: 100%;
     
 	
 	background-repeat: no-repeat;
@@ -92,8 +92,12 @@ display: table-row;
 #secondthree{
     display: none;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
-@media (max-width: 600px)  {
+@media (max-width: 1000px)  {
     body{
         padding: 0;
         width: 100%;

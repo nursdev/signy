@@ -8,50 +8,46 @@
     
         <link rel="stylesheet" href="./about.css" />
         <link rel="stylesheet" href="./main.css" />
+    <script src="./script.js"></script>
         <script src="./jquery-3.6.2.js"></script>
+
+
 </head>
 <body>
 
-  <nav class="header__menu">
-    <ul class="header__list">
-      <li
-        class="header__link"
-        onmouseover="showPhone()"
-        onmouseout="hidePhone()"
-      >
-        <a href="tel:0 800 750 643">0 800 750 643</a>
-        <a class="phone" href="tel:044 334 56 43">044 334 56 43</a>
-      </li>
-      <li
-        class="header__link"
-        onmouseover="showList()"
-        onmouseout="hideList()"
-      >
-        <a href="">О НАС</a>
-        <div class="lists">
-          <a href="./blog.html">БЛОГ</a>
-          <br />
-          <a href="./video.html">ВИДЕО</a>
-          <br />
-          <a href="./questions.html">ВОПРОСЫ</a>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <div href="#" class="header__logo">
+          <a href="">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+
+          <h2>Signy</h2>
         </div>
-      </li>
-      <li class="header__link">
-        <a href="./rate.html">ТАРИФЫ</a>
-      </li>
-      <li class="header__link">
-        <a href="./contacts.html">КОНТАКТЫ</a>
-      </li>
-      <li class="header__link">
-        <a href="./signIn.html" class="entry">ВХОД</a>
-      </li>
-      <li class="header__link">
-        <a href="./registration.html" class="registration"
-          >РЕГИСТРАЦИЯ</a
-        >
-      </li>
-    </ul>
-  </nav>
+
+        <div onclick="showMenu()" class="header__burger">
+          <img id="menuBtn" src="./images/menu.svg" alt="" />
+        </div>
+
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__link">0 800 750 643</li>
+            <li class="header__link">ПРО НАС</li>
+            <li class="header__link">ЦЕНЫ</li>
+            <li class="header__link">КОНТАКТЫ</li>
+            <li class="header__link">
+              <a href="" class="entry">ВХОД</a>
+            </li>
+            <li class="header__link">
+              <a href="" class="registration">РЕГИСТРАЦИЯ</a>
+            </li>
+            <li class="header__link">РУС</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
 
     <div id="blockMain">
@@ -61,9 +57,11 @@
     <br>
         <div id="first">
             <h2>БЛОГ</h2>
+            <a href="./text1.html"><
             <img class="firstimg" src="./images/blog/20-1.png" alt="" width="731px" height="">
             <h4>28.05.2020</h4>
             <span class="mainNews">Три шага к настройке электронного документооборота в строительной компании</span>
+            </a>
         </div>
         
         <div id="nav-bar">
@@ -74,10 +72,10 @@
         <div id="secondone">
           <div class="tableD">
             <table class="rowD">
-              <div class="cellD" ><img class="imgD" src="./images/blog/20-1.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Три шага к настройке электронного документооборота в строительной компании</p></div></div>
-              <div class="cellD"><img class="imgD" src="./images/blog/17-1.png"  alt=""><h3 class="datetime">26.11.2022</h3><p class="textOfNews">Как умение Signy интегрироваться с любыми системами делает более удобным ваше сотрудничество с контрагентами
-              </p></div>
-              <div class="cellD"><img class="imgD" src="./images/blog/WEB.png" alt=""><h3 class="datetime">05.11.2022</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины</p></div>
+              <div class="cellD" ><a href="./text1.html"><img class="imgD" src="./images/blog/20-1.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Три шага к настройке электронного документооборота в строительной компании</p></a></div>
+              <div class="cellD"><a href="./text2.htm"><img class="imgD" src="./images/blog/17-1.png"  alt=""><h3 class="datetime">26.11.2022</h3><p class="textOfNews">Как умение Signy интегрироваться с любыми системами делает более удобным ваше сотрудничество с контрагентами
+              </p></a></div>
+              <div class="cellD"><a href="./text3.html"><img class="imgD" src="./images/blog/WEB.png" alt=""><h3 class="datetime">05.11.2022</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины</p></a></div>
               
               
            
@@ -86,12 +84,12 @@
 
           <div class="tableD">
             <table class="rowD">
-              <div class="cellD" ><img class="imgD" src="./images/blog/16.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Как ускорить диджилизацию документооборота в торговых компаниях
-              </p></div></div>
-              <div class="cellD"><img class="imgD" src="./images/blog/01-3.png" alt=""><h3 class="datetime">25.03.2022</h3><p class="textOfNews">Три мифа, которые мешают вам перейти на электронный документооборот
-              </p></div>
-              <div class="cellD"><img class="imgD" src="./images/blog/19.png" alt=""><h3 class="datetime">05.03.2022</h3><p class="textOfNews">В Украине провели опрос о готовности перейти на эТТН
-              </p></div>
+              <div class="cellD" ><a href="./text4.html"><img class="imgD" src="./images/blog/16.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Как ускорить диджилизацию документооборота в торговых компаниях
+              </p></a></div>
+              <div class="cellD"><a href="./text5.html"><img class="imgD" src="./images/blog/01-3.png" alt=""><h3 class="datetime">25.03.2022</h3><p class="textOfNews">Три мифа, которые мешают вам перейти на электронный документооборот
+              </p></a></div>
+              <div class="cellD"><a href="./text6.html"><img class="imgD" src="./images/blog/19.png" alt=""><h3 class="datetime">05.03.2022</h3><p class="textOfNews">В Украине провели опрос о готовности перейти на эТТН
+              </p></a></div>
               
               
            
@@ -100,12 +98,11 @@
 
           <div class="tableD">
             <table class="rowD">
-              <div class="cellD" ><img class="imgD" src="/images/blog/13.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Украинскую электронную подпись официально признали подходящей под евростандарты
-              </p></div></div>
-              <div class="cellD"><img class="imgD" src="/images/blog/12.png" alt=""><h3 class="datetime"></h3><p class="textOfNews">30.11.2022</p>Касательно изменений в законодательстве в сфере электронных доверительных услуг
-              </div>
-              <div class="cellD"><img class="imgD" src="/images/blog/11-1.png" alt=""><h3 class="datetime">25.11.2022</h3><p class="textOfNews">Правительство планирует принять признание зарубежных электронных доверительных услуг
-              </p></div>
+              <div class="cellD" ><a href="./text7.html"><img class="imgD" src="./images/blog/13.png" alt=""><h3 class="datetime">22.03.22</h3><p class="textOfNews">Украинскую электронную подпись официально признали подходящей под евростандарты
+              </p></a></div>
+              <div class="cellD"><a href="./text8.html"><img class="imgD" src="./images/blog/12.png" alt=""><h3 class="datetime"></h3><p class="textOfNews">Касательно изменений в законодательстве в сфере электронных доверительных услуг</p></a></div>
+              <div class="cellD"><a href="./text9.html"><img class="imgD" src="./images/blog/11-1.png" alt=""><h3 class="datetime">25.11.2022</h3><p class="textOfNews">Правительство планирует принять признание зарубежных электронных доверительных услуг
+              </p></a></div>
               
               
            
@@ -134,10 +131,10 @@
         <div id="secondtwo">
           <div class="tableD">
             <table class="rowD">
-              <div class="cellD" ><img class="imgD" src="/images/blog/13.png" alt=""><h3>08.09.20</h3><p class="textOfNews">Законодательные основания для перехода украинских компаний на ЭДО
+              <div class="cellD" ><a href="./text8.html"></a><img class="imgD" src="./images/blog/13.png" alt=""><h3>08.09.20</h3><p class="textOfNews">Законодательные основания для перехода украинских компаний на ЭДО
               </p></div></div>
-              <div class="cellD"><img class="imgD" src="" alt=""></div>
-              <div class="cellD"><img class="imgD" src="" alt=""></div>
+              <div class="cellD"><a href=""></a><img class="imgD" src="" alt=""></div>
+              <div class="cellD"><a href=""></a><img class="imgD" src="" alt=""></div>
               
               
            
@@ -148,13 +145,13 @@
         <div id="secondthree">
           <div class="tableD">
             <table class="rowD">
-              <div class="cellD" ><img class="imgD" src="/images/blog/novosti1.png" alt=""><h3>17.11.22</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины
-              </p></div></div>
-              <div class="cellD"><img class="imgD" src="/images/blog/novosti2.png" alt=""><h3>101.11.22</h3><p class="textOfNews"><h3>17.11.22</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины
-              </p></div></div>
+              <div class="cellD" ><a href="./text7.html"><img class="imgD" src="./images/blog/novosti1.png" alt=""><h3>17.11.22</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины
+              </p></a></div>
+              <div class="cellD"><a href="./text3.html"><img class="imgD" src="./images/blog/novosti2.png" alt=""><h3>101.11.22</h3><p class="textOfNews"><h3>17.11.22</h3><p class="textOfNews">Электронный документооборот становится обязательным в общеобразовательных учреждениях Украины
+              </p></a></div>
               
-              <div class="cellD"><img class="imgD" src="/images/blog/novosti3.png" alt=""><h3>18.11.22</h3><p class="textOfNews">Курс на paperless: Украина откажется от бумажных носителей к ноябрю 2021
-              </p></div>           
+              <div class="cellD"><a href="./text1.html"><img class="imgD" src="./images/blog/novosti3.png" alt=""><h3>18.11.22</h3><p class="textOfNews">Курс на paperless: Украина откажется от бумажных носителей к ноябрю 2021
+              </p></a></div>         
             </table>
             
               
@@ -199,5 +196,58 @@
       
     };
     </script>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item-col">
+            <a href="">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </li>
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">
+                <a href="./index.html">Про нас</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./rate.html">Тарифы</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./signIn.html">Вход</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./registration.html">Регистрация</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">
+                <a href="./blog.html">Блог</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./contacts.html">Наши контакты</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">пр-т Миколи Бажана, 14 А</li>
+              <li class="footer__list-row-item">Київ, 02072</li>
+              <li class="footer__list-row-item">
+                <a href="tel:0800750643">0 800 750 643</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="tel:0443345643">044 334 56 43</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="tel:0443378643">044 337 86 43</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
 </body>
 </html>

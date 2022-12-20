@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "IBM Plex Sans", sans-serif;
+    background: linear-gradient(
+    293.97deg,
+    #ffffff -9.96%,
+    rgba(222, 238, 252, 1) 111.88%
+    
+  );
+        }
+        #mainDiv{
+            padding: 5%;
+        }
+        p{
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        h1{
+            margin-top: 1%;
+            margin-bottom: 1%; 
+        }
+        li{
+            padding: 1%;
+        }   
+        @media (max-width:600px) {
+            #mainDiv{
+            padding: 10%;
+        }
+        p{
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        h1{
+            font-size: 130%;
+            margin-top: 1%;
+            margin-bottom: 1%; 
+        }
+        li{
+            padding: 1%;
+        }
+        ol{
+            padding: 8%;
+        }
+        li{
+            padding: 1%;
+        }
+        }  
+        </style>
+        <link rel="stylesheet" href="./main.css" />
+        <script src="./script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div href="#" class="header__logo">
+              <a href="">
+                <img src="./images/logo.svg" alt="" />
+              </a>
+
+              <h2>
+                <a href="./index.html">Signy</a>
+              </h2>
+            </div>
+
+            <div onclick="showMenu()" class="header__burger">
+              <img id="menuBtn" src="./images/menu.svg" alt="" />
+            </div>
+
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li
+                  class="header__link"
+                  onmouseover="showPhone()"
+                  onmouseout="hidePhone()"
+                >
+                  <a href="tel:0 800 750 643">0 800 750 643</a>
+                  <a class="phone" href="tel:044 334 56 43">044 334 56 43</a>
+                </li>
+                <li
+                  class="header__link"
+                  onmouseover="showList()"
+                  onmouseout="hideList()"
+                >
+                  <a href="">О НАС</a>
+                  <div class="lists">
+                    <a href="./blog.html">БЛОГ</a>
+                    <br />
+                    <a href="./video.html">ВИДЕО</a>
+                    <br />
+                    <a href="./questions.html">ВОПРОСЫ</a>
+                  </div>
+                </li>
+                <li class="header__link">
+                  <a href="./rate.html">ТАРИФЫ</a>
+                </li>
+                <li class="header__link">
+                  <a href="./contacts.html">КОНТАКТЫ</a>
+                </li>
+                <li class="header__link">
+                  <a href="./signIn.html" class="entry">ВХОД</a>
+                </li>
+                <li class="header__link">
+                  <a href="./registration.html" class="registration"
+                    >РЕГИСТРАЦИЯ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <div id="mainDiv">
+        <h6>Signy.online / Все / В Украине провели опрос о готовности перейти на эТТН</h6>
+        <h1>В Украине провели опрос о готовности перейти на эТТН</h1>
+        <h5>1.08.22</h5>
+        <p>В начале лета в Украине был проведен опрос о целесообразности внедрения эТТН (электронных товарно-транспортных накладных), в котором приняли участие 160 представителей отрасли транспортных перевозок. В их числе грузоотправители, перевозчики, грузополучатели и логистические операторы.
+
+            </p>
+            <p>Напомним, что до начала полномасштабной войны в Украине планировалось ввести обязательные транспортные эТТН с 1 августа 2022 года.</p>
+            <h1>Кто проводил опрос</h1>
+            <p>Всеукраинский опрос был проведен по инициативе Министерства инфраструктуры Украины совместно с Институтом аналитики и адвокации. Поддержку оказывали команды Министерства цифровой трансформации и проекта USAID/UK aid «Прозрачность и подотчетность в государственном управлении и услугах»</p>
+            <h1>Результаты опроса</h1>
+            <p>Согласно опубликованным результатам, отечественный бизнес готов к диджитализации даже в условиях военного времени:
+                <ul>
+                    <li>89,9% опрошенных предпринимателей и компаний готовы принять участие в тестировании системы эТТН;</li>
+                    <li>почти половина (49,3%) согласных на тестирование готовы сделать это уже в III квартале 2022 года, еще треть (34,5%) — в IV квартале 2022 года, 14,1% — в 2023 году, и только 2,1% — после окончания войны;</li>
+                    <li>31% опрошенных уже определились с системой электронного документооборота, с помощью которой будут пользоваться эТТН.</li>
+                </ul>
+                Пользователи Signy могут также приобщаться к тестированию, ведь наша система ЭДО помогала осуществлять перевозку по новой схеме практически с момента официального запуска эТТН в 2019 году.
+            </p>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item-col">
+            <a href="">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </li>
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">
+                <a href="./index.html">Про нас</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./rate.html">Тарифы</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./signIn.html">Вход</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./registration.html">Регистрация</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">
+                <a href="./blog.html">Блог</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="./contacts.html">Наши контакты</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__item-col">
+            <ul class="footer__list-row">
+              <li class="footer__list-row-item">пр-т Миколи Бажана, 14 А</li>
+              <li class="footer__list-row-item">Київ, 02072</li>
+              <li class="footer__list-row-item">
+                <a href="tel:0800750643">0 800 750 643</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="tel:0443345643">044 334 56 43</a>
+              </li>
+              <li class="footer__list-row-item">
+                <a href="tel:0443378643">044 337 86 43</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
