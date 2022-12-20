@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./contacts.css" />
   </head>
   <body>
-    <div class="main">
+    <div id="main">
+      <img src="./images/contacts/spinner2.svg" alt="">
+    </div>
+    <div class="main1">
       <header class="header">
         <div class="container">
           <div class="header__body">
@@ -60,7 +63,7 @@
                   <a href="./signIn.html" class="entry">ВХОД</a>
                 </li>
                 <li class="header__link">
-                  <a href="./registration.html" class="registration"
+                  <a href="./registration.php" class="registration"
                     >РЕГИСТРАЦИЯ</a
                   >
                 </li>
@@ -71,8 +74,8 @@
       </header>
       <div class="all-section">
         <div class="section1">
-          <a class="a-for_signy" href="./index.html">Signy</a>
-          <span> / Контакты</span>
+          <a style="font-size: 15px;" class="a-for_signy" href="./index.html">Signy</a>
+          <span style="font-size: 15px;"> / Контакты</span>
         </div>
         <div class="section2">
           <h1>Наши контакты</h1>
@@ -125,7 +128,7 @@
                   src="./images/contacts/location.svg"
                   alt=""
                 />
-                <ul class="ul_contact">
+                <ul class="ul_contact"> 
                   <li>пр-т Бажана, 14 А Киев, 02072</li>
                 </ul>
               </div>
@@ -181,7 +184,7 @@
                 placeholder="Текст сообщения"
               ></textarea>
               <div class="for-submit-button">
-                <input class="for-submit" type="button" value="ОТПРАВИТЬ" />
+                <input class="for-submit" type="submit" value="ОТПРАВИТЬ" />
               </div>
             </label>
           </form>
@@ -197,38 +200,76 @@
               </li>
               <li class="first_li-footer-col">
                 <ul class="second_ul-footer-row">
-                  <li class="second_li-footer-row">Про нас</li>
-                  <li class="second_li-footer-row">Тарифы</li>
-                  <li class="second_li-footer-row">Вход</li>
-                  <li class="second_li-footer-row">Регистрация</li>
+                  <li class="second_li-footer-row">
+                    <a href="./index.html">
+                      Про нас
+                    </a>
+                  </li>
+                  <li class="second_li-footer-row">
+                    <a href="./rate.html">
+                      Тарифы
+                    </a>  
+                  </li>
+                  <li class="second_li-footer-row">
+                    <a href="./signIn.html">
+                      Вход
+                    </a>
+                  </li>
+                  <li class="second_li-footer-row">
+                    <a href="./registration.php">
+                      Регистрация
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="first_li-footer-col">
                 <ul class="second_ul-footer-row">
-                  <li class="second_li-footer-row">Блог</li>
-                  <li class="second_li-footer-row">Наши контакты</li>
-                </ul>
-              </li>
-              <li class="first_li-footer-col">
-                <ul class="second_ul-footer-row">
-                  <li class="second_li-footer-row">info@signy.online</li>
-                  <li class="second_li-footer-row">Facebook</li>
-                  <li class="second_li-footer-row">Вход</li>
-                  <li class="second_li-footer-row">Регистрация</li>
+                  <li class="second_li-footer-row">
+                    <a href="./blog.html">
+                      Блог
+                    </a>
+                  </li>
+                  <li class="second_li-footer-row">
+                    <a href="./contacts.html">
+                      Наши контакты
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="first_li-footer-col">
                 <ul class="second_ul-footer-row">
                   <li class="second_li-footer-row">пр-т Миколи Бажана, 14 А Київ, 02072</li>
-                  <li class="second_li-footer-row">0 800 750 643</li>
-                  <li class="second_li-footer-row">044 334 56 43</li>
-                  <li class="second_li-footer-row">044 337 86 43</li>
+                  <li class="second_li-footer-row">
+                    <a href="tel:0800750643">
+                      0 800 750 643
+                    </a>                  
+                  </li>
+                  <li class="second_li-footer-row">
+                    <a href="tel:0443345643">
+                      044 334 56 43
+                    </a>
+                  </li>
+                  <li class="second_li-footer-row">
+                    <a href="tel:0443378643">
+                      044 337 86 43
+                    </a>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
         </footer>
     </div>
+    <script>
+      window.onload = function() {
+        let preloader = document.getElementById('main');
+        preloader.classList.add('hide-preloader');
+
+        setInterval(function() {
+          preloader.classList.add('preloader-hidden');
+          }, 990);
+        }
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

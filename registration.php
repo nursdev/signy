@@ -31,10 +31,17 @@ if(isset($_POST['submit'])) {
     <link rel="stylesheet" href="./registration.css">
 </head>
 <body>
+    <div id="main">
+        <img src="./images/contacts/spinner2.svg" alt="">
+      </div>
     <div class="wrapper">
         <div class="wrap">
             <div class="container1">
-                <h1 class="for-smart">Smart ID</h1>
+            <h1 class="for-smart">
+                    <a class="for-a-smart" style="text-decoration: none; color: inherit;" href="./signIn.html">
+                        Smart ID
+                    </a>
+                </h1>
             </div>
         </div>
         <section class="section1">
@@ -80,6 +87,16 @@ if(isset($_POST['submit'])) {
                 </div>
             </div>
         </section>
-    </div>    
+    </div>
+    <script>
+        window.onload = function() {
+            let preloader = document.getElementById('main');
+            preloader.classList.add('hide-preloader');
+
+        setInterval(function() {
+          preloader.classList.add('preloader-hidden');
+          }, 990);
+        }
+    </script>    
 </body>
 </html>

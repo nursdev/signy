@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <div class="main">
+    <div id="main">
+        <img src="./images/contacts/spinner2.svg" alt="">
+      </div>
+    <div class="main1">
         <header class="header">
             <div class="container">
                 <div class="header-body">
@@ -21,30 +24,24 @@
                               <h2>Signy</h2>
                       </div>
 
-                      <div onclick="showMenu()" class="header-burger">
-                        <img id="menuBtn" src="./images/menu.svg" alt="" />
-                      </div>
-
                       <nav class="header-menu">
                         <ul class="header-list">
-                            <li class="header-link">
+                            <!-- <li class="header-link">
                                 <div class="div-for-blue">
                                     <a class="a-for-info" href="#">
                                         <img class="for-mobile-icon" src="./images/contacts/mobile.svg" alt="">
                                         <span class="for-mobile-text">Перезвоните мне</span>
                                     </a>
                                 </div>                                 
-                            </li>
+                            </li> -->
                             <li class="header-link">
-                                <a class="a-for-mobile a-for-info" href="tel:0 800 750 643">0-800-750-643</a>
+                                <a class="a-for-mobile a-for-info" href="tel:0 800 750 643" style="font-size: 17px;">
+                                    <img style="height: 30px; margin-bottom: -9px;" class="header-icon" src="./images/landphone.svg" alt="">
+                                    0-800-750-643</a>
                             </li>
+                            
                             <li class="header-link">
-                                <a a-for-info href="#">
-                                    <select name="language" id="">
-                                        <option value="eng">English</option>
-                                        <option value="rus">Русский</option>
-                                    </select>
-                                </a>
+                                <a class="a-for-mobile a-for-info glav" style="color: #000; font-size: 17px;" href="./index.html">Главная</a>
                             </li>
                         </ul>
                       </nav>
@@ -89,7 +86,7 @@
                     <p class="for-registr-p">Создайте новую учетную запись</p>
                     <div class="for-password-sign">
                         <div class="for-password-sign1 sign2">
-                            <a class="for-a" href="./registration.html">
+                            <a class="for-a" href="./registration.php">
                                 <span>Зарегестрироваться</span>
                             </a>
                         </div>
@@ -100,20 +97,41 @@
         </div>
         <div class="centre-my-page"></div>
         <footer class="footer1">
-            <div class="footer-wrapper">
+            <div class="footer-wrapper" style="height: 60px;">
                 <div class="footer-left">
-                   <span>Signy © 2020</span>
+                   <span>
+                    <a class="for-tel-footer" style="text-decoration: none; color: #000;" href="./index.html">
+                        Signy © 2020
+                    </a>
+                </span>
                 </div>
                 
                 <div class="footer-right">
-                    <a href="#">+38 (044) 337-86-43,</a>
-                    <a href="#">+38 (044) 334-56-43</a>
-                <br/>
-                    <a href="#">info@signy.online</a>
+                    <div class="footer-right1" style="margin-bottom: 4%;">
+                        <img class="for-mobile-icon" src="./images/contacts/mobile.svg" alt="">
+                        <a class="for-tel-footer" style="text-decoration: none; color: #000;" href="tel:+38 (044) 337-86-43">+38 (044) 337-86-43,</a>
+                        <a class="for-tel-footer" style="text-decoration: none; color: #000;" href="tel:+38 (044) 334-56-43">+38 (044) 334-56-43</a>
+                    </div>
+                <!-- <br> -->
+                    <div class="footer-right2">
+                        <img class="for-mobile-icon" src="./images/contacts/letter.svg" alt="">
+                        <a class="for-tel-footer" style="text-decoration: none; color: #000;" href="malito:info@signy.online">info@signy.online</a>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
+    
     <script src="./script.js"></script>
+    <script>
+        window.onload = function() {
+            let preloader = document.getElementById('main');
+            preloader.classList.add('hide-preloader');
+
+        setInterval(function() {
+          preloader.classList.add('preloader-hidden');
+          }, 990);
+        }
+    </script>
 </body>
 </html>
