@@ -4,26 +4,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: none;
+  /* border: none; */
   /* border: 1px solid red; */
-  transition: width 1s ease 0s;
+  /* transition: width 1s ease 0s; */
 }
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  /* height: 100%;
-  overflow: hidden; */
-}
-.a-for_signy{
-  text-decoration: none;
-  color: #000;
+  overflow-x: hidden;
 }
 .container {
   max-width: 80%;
   margin: 0 auto;
   padding: 0 10px;
-  /* position: relative; */
 }
-
 .header {
   background: linear-gradient(
     293.97deg,
@@ -31,11 +25,17 @@ body {
     rgba(222, 238, 252, 1) 111.88%
   );
 }
-.header-burger {
+.header__burger {
   display: none;
 }
 
-.header-body {
+@media all and (max-width: 30em) {
+  .slideBtn {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+.header__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,24 +43,33 @@ body {
   width: 100%;
   margin-bottom: 40px;
 }
-.header-menu {
+.header__menu {
   width: 70%;
 }
-.header-list {
+.header__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
-.header-logo {
+.header__list a {
+  font-weight: 500;
+}
+.header__list {
+  font-weight: 500;
+}
+.header__logo {
   display: flex;
   align-items: center;
 }
-.header-logo h2 {
+.header__logo h2 a {
   margin-left: 5px;
+  text-decoration: none;
+  color: #000;
 }
-.header-link {
+
+.header__link {
   list-style: none;
 }
 #menuBtn {
@@ -77,6 +86,10 @@ body {
   color: #000;
   font-weight: 500;
 }
+.entry:hover {
+  background-color: #1064e5 !important;
+  color: #fff;
+}
 .registration {
   padding: 8px 15px;
   background-color: #1064e5;
@@ -85,6 +98,7 @@ body {
   border-radius: 20px;
   text-decoration: none;
 }
+
 .registration:hover {
   background: linear-gradient(
     293.97deg,
@@ -93,13 +107,62 @@ body {
   );
   color: #000 !important;
 }
+@media (max-width: 1180px) {
+  .header__body {
+    display: block;
+  }
 
-@media (max-width: 768px) {
-  
+  .header__list {
+    display: block;
+  }
+  .header__link {
+    margin-top: 20px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 22px;
+    margin-right: 20px;
+  }
+}
+.phone {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  /* background-color: #fff; */
+}
+.phone:hover {
+  background-color: #d8f1f0;
+}
+.header__link a:hover {
+  background-color: #d8f1f0;
+}
+.lists {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  /* background-color: #fff; */
 }
 
+.lists a:hover {
+  background-color: #d8f1f0;
+}
+.header__link a {
+  text-decoration: none;
+  color: #000;
+}
 /* SECTIONS */
 
+.a-for_signy{
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
 .section1{
   max-width: 50%;
   max-height: 1%;
